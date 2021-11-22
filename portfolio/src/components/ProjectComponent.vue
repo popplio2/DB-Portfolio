@@ -1,9 +1,11 @@
 <template>
-  <section class="global-container">
-      <img src="http://www.inspiredluv.com/wp-content/uploads/2016/10/24-cool-wallpapers.jpg" />
+  <section>
+      <slot></slot>
       <div>
-          <slot></slot>
-          <Button>Go to project ➤</Button>
+          <slot name="text"></slot>
+          <!-- <router-link :to="'./' + project"> -->
+            <Button>Go to project ➤</Button>
+          <!-- </router-link> -->
       </div>
   </section>
 </template>
@@ -14,19 +16,23 @@ export default {
     components: {
         Button,
     },
+    // props: {
+    //     project
+    // }
 }
 </script>
 
 <style scoped>
     section {
         display: flex;
-    }
-    img {
-        object-fit: cover;
-        width: 50%;
-        height: inherit;
-        margin-right: 2rem;
+        padding: 2rem;
+        border: .2rem solid transparent;
         border-radius: 1rem;
+        transition: all .3s;
+        cursor: pointer;
+    }
+    section:hover {
+        border: .2rem solid var(--accent-color);
     }
     div {
         width: 50%;

@@ -4,7 +4,7 @@
       <router-link to="/">
         <li>Home</li>
       </router-link>
-      <router-link to="/about">
+      <router-link to="/projects">
         <li>Projects</li>
       </router-link>
     </ul>

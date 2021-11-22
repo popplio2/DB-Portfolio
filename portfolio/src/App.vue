@@ -1,6 +1,10 @@
 <template>
   <Nav />
-  <router-view />
+  <router-view v-slot="{ Component }">
+    <transition name="slidefade" mode="out-in">
+      <component :is="Component"></component>
+    </transition>
+  </router-view>
 </template>
 
 <script>
@@ -15,7 +19,7 @@ export default {
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
   :root {
-    --main-color: #0090ff;
+    --main-color: #006deb;
     --accent-color: #00d9ff;
     --h1: 7rem;
     --h2: 5rem;
@@ -46,5 +50,18 @@ export default {
   p {
     font-size: var(--p);
     margin-top: 1rem;
+    line-height: 1.5;
   }
+.slidefade-enter-active,
+.slidefade-leave-active  {
+  transition: all 0.3s ease;
+  transform: translateX(0);
+}
+.slidefade-enter-from {
+  opacity: 0;
+  transform: translateX(-2rem);
+}
+.slidefade-leave-to {
+  opacity: 0;
+}
 </style>
