@@ -14,7 +14,7 @@ export default {
     font-size: 1.6rem;
     font-weight: 700;
     padding: 1rem 2rem;
-    background-color: unset;
+    background-color: var(--white);
     border: .15rem solid var(--main-color);
     border-radius: .5rem;
     transition: all .3s;
@@ -22,6 +22,6 @@ export default {
   }
   button:hover {
     transform: translateY(-.5rem);
-    box-shadow: 0 .3rem .75rem rgba(0, 142, 185, 0.2);
+    box-shadow: var(--box-shadow);
   }
 </style>

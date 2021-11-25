@@ -1,5 +1,4 @@
 <template>
-  <Nav />
   <router-view v-slot="{ Component }">
     <transition name="slidefade" mode="out-in">
       <component :is="Component"></component>
@@ -8,12 +7,6 @@
 </template>
 
 <script>
-import Nav from '@/components/Nav.vue';
-export default {
-  components: {
-    Nav
-  }
-}
 </script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
@@ -21,6 +14,9 @@ export default {
   :root {
     --main-color: #006deb;
     --accent-color: #00d9ff;
+    --white: #fff;
+    --black: #000;
+    --box-shadow: 0 .3rem .75rem rgba(0, 142, 185, 0.2);
     --h1: 7rem;
     --h2: 5rem;
     --h3: 3rem;
@@ -55,11 +51,11 @@ export default {
 .slidefade-enter-active,
 .slidefade-leave-active  {
   transition: all 0.3s ease;
-  transform: translateX(0);
+  /* transform: translateX(0); */
 }
 .slidefade-enter-from {
   opacity: 0;
-  transform: translateX(-2rem);
+  /* transform: translateX(-2rem); */
 }
 .slidefade-leave-to {
   opacity: 0;

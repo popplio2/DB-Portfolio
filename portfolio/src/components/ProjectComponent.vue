@@ -1,13 +1,13 @@
 <template>
-  <section>
+  <router-link :to="'/' + project.path">
+    <section>
       <slot></slot>
       <div>
           <slot name="text"></slot>
-          <!-- <router-link :to="'./' + project"> -->
-            <Button>Go to project ➤</Button>
-          <!-- </router-link> -->
+          <Button>Go to project ➤</Button>
       </div>
-  </section>
+    </section>
+  </router-link>
 </template>
 
 <script>
@@ -16,9 +16,9 @@ export default {
     components: {
         Button,
     },
-    // props: {
-    //     project
-    // }
+    props: {
+        project: Object
+    },
 }
 </script>
 
@@ -33,6 +33,14 @@ export default {
     }
     section:hover {
         border: .2rem solid var(--accent-color);
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        }
+    a:visited{
+        text-decoration: none;
+        color: black;
     }
     div {
         width: 50%;

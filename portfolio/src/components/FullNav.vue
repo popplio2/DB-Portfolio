@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav class="nav">
     <ul>
       <router-link to="/">
         <li>Home</li>
@@ -18,9 +18,8 @@ export default {
 </script>
 
 <style scoped>
-  nav {
-    position: fixed;
-    background-color: #fff;
+  .nav {
+    background-color: var(--white);
     width: fit-content;
     padding: 0 3rem;
     margin: auto;
@@ -29,22 +28,18 @@ export default {
     border-right: .1rem solid var(--main-color);
     border-bottom-left-radius: 5rem;
     border-bottom-right-radius: 5rem;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    right: 0;
   }
-  li {
+  .nav li {
     display: inline-block;
     color: var(--main-color);
     border-bottom: .2rem solid transparent;
     font-size: 1.6rem;
     font-weight: 700;
     letter-spacing: .05rem;
-    margin: 1.5rem 3rem;
+    margin: 1.1rem 3rem;
     transition: all .3s;
   }
-  li:hover {
+  .nav li:hover {
     border-bottom: .2rem solid var(--accent-color);
   }
 </style>
