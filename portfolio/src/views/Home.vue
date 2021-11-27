@@ -27,7 +27,7 @@
     <section class="about global-container">
       <h2>About Me</h2>
       <q>I can see my improvement and it motivates me to keep going.</q>
-      <p>Hello, world! I'm Daniel Briskman. I was first exposed to programming in my freshman year Robotics class.  I found that, more than anything else, I loved to analyze what went wrong in each attempt at a challenge and adjust our to rectify that. At the time, though, I did not consider myself compatible with STEM careers, and I did not entertain the possibility, believing that I needed a career that was inherently creative. This all changed during the lockdowns, when I had no choice but to face answering the questions: “Who am I? What do I love doing? What do I want to do with my life?” After doing research and finding an interest in User Experience Design, a field I had never heard of previously, I took courses online to learn as much as I could about the subject, and I learned how to use Figma to design wireframes and prototypes. What I loved most about UX Design was that it was both a science and an art—with elements of both psychology and graphic design. My interest in UX served me well when I took computer science junior year, and I ended up finding computer science even more fascinating than UX. One of the things I love about computer science is that is that it’s not hard to find out what skill level I am. It’s just, “Can I solve this problem?”. When "leveling up" in computer science, I can see my improvement and it motivates me to keep going.</p>
+      <p>Hello, world! I'm Daniel Briskman. For a long time, I never envisioned myself in a STEM career. This changed during the lockdowns, when I had no choice but to face answering the questions: “Who am I? What do I love doing? What do I want to do with my life?” After finding an interest in User Experience Design (UX Design), a field I had never heard of previously, I took courses online to learn as much as I could about the subject, and I learned how to use Figma to design wireframes and prototypes. My knowledge of UX served me well when I took computer science junior year, and I ended up finding computer science even more fascinating than UX. One of the things I love about programming is that there is a rather clear path towards skill. I can see my improvement and it motivates me to keep going.</p>
     </section>
 
     <svg class="wave inverted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -71,9 +71,9 @@
             </li>
           </ul>
         </div>
-        <router-link class="button-link" to="/projects">
+        <!-- <router-link class="button-link" to="/projects">
           <Button>See them in action ➤</Button>
-        </router-link>
+        </router-link> -->
       </div>
     </section>
     
@@ -170,7 +170,6 @@ export default {
     border: .15rem solid var(--main-color);
     border-radius: 10rem;
     box-shadow: var(--box-shadow);
-    padding: 1.5rem;
     margin: 3%;
     z-index: 1;
     color: var(--main-color);
@@ -204,7 +203,7 @@ export default {
   .skills-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: baseline;
   }
   .skills-table {
@@ -243,4 +242,17 @@ export default {
     margin-right: 1rem;
     color: var(--main-color);
   }
+
+@media only screen and (max-width: 600px) {
+    .img-and-btn {
+      flex-direction: column;
+      align-items: center;
+    }
+    .img-and-btn button {
+      margin-bottom: 3rem;
+    }
+    .skills {
+      margin-top: -2rem;
+    }
+}
 </style>

@@ -43,7 +43,7 @@
   h3 {
     font-size: var(--h3);
   }
-  p {
+  p, b {
     font-size: var(--p);
     margin-top: 1rem;
     line-height: 1.5;
@@ -59,5 +59,14 @@
 }
 .slidefade-leave-to {
   opacity: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --h1: 5rem;
+    --h2: 3rem;
+    --h3: 2rem;
+    --p: 1.6rem;
+  }
 }
 </style>

@@ -3,19 +3,19 @@
     <HalfNav />
     <h2>My Projects</h2>
     <div class="projects-container global-container">
-      <ProjectComponent v-for="project in projects" :key="project.title" :project="project">
+      <ProjectCard v-for="project in projects" :key="project.title" :project="project">
         <img :src="project.image" alt="">
         <template v-slot:text>
           <h3>{{ project.title }}</h3>
           <p>{{ project.description }}</p>
         </template>
-      </ProjectComponent>
+      </ProjectCard>
     </div>
   </div>
 </template>
 
 <script>
-import ProjectComponent from '@/components/ProjectComponent.vue';
+import ProjectCard from '@/components/ProjectCard.vue';
 import HalfNav from '../components/HalfNav.vue';
 
 export default {
@@ -62,7 +62,7 @@ export default {
     }
   },
   components: {
-    ProjectComponent,
+    ProjectCard,
     HalfNav
   }
 }
@@ -92,4 +92,11 @@ export default {
     grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
     gap: 2rem;
   }
+
+@media only screen and (max-width: 600px) {
+    img {
+      width: 100%;
+      object-position: center;
+    }
+}
 </style>
