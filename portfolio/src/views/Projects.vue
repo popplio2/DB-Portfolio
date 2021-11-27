@@ -94,6 +94,9 @@ export default {
   }
 
 @media only screen and (max-width: 600px) {
+    .projects-container {
+      grid-template-columns: 1fr;
+    }
     img {
       width: 100%;
       object-position: center;

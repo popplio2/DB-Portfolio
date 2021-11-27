@@ -27,7 +27,7 @@
     <section class="about global-container">
       <h2>About Me</h2>
       <q>I can see my improvement and it motivates me to keep going.</q>
-      <p>Hello, world! I'm Daniel Briskman, a front-end developer who emphasizes sleek user interfaces and pleasant user experiences. My interest in programming stems from an interest in human-computer interaction. After first hearing about User Experience Design (UX Design), I took courses online to learn as much as I could about the subject, and I learned how to use Figma to design wireframes and prototypes. My knowledge of UX served me well when I took computer science in my junior year of high school, and I found computer science an even better fit for me. One of the things I love about programming is that there is a rather clear path towards skill. I can see my improvement and it motivates me to keep going.</p>
+      <p>Hello, world! I'm Daniel Briskman, a front-end developer who emphasizes sleek user interfaces and pleasant user experiences. My interest in programming stemmed from an interest in User Experience Design (UX Design), which I took online courses to learn about. I also taught myself how to use Figma to design wireframes and prototypes. My knowledge of UX served me well when I took a computer science class, and I found computer science an even better fit for me. One of the things I love about programming is that there is a rather clear path towards skill. I can see my improvement and it motivates me to keep going.</p>
     </section>
 
     <svg class="wave inverted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -117,7 +117,7 @@ export default {
   }
   .wave {
     width: 100%;
-    display: block;
+    /* display: block; */
     transform-origin: bottom;
     animation: animateWave 1.5s ease-in-out forwards;
   }
@@ -167,7 +167,7 @@ export default {
     right: 0;
     font-size: 2rem;
     background-color: var(--main-color);
-    border: .15rem solid var(--white);
+    border: .15rem solid var(--accent-color);
     border-radius: 10rem;
     box-shadow: var(--box-shadow);
     padding: 1.5rem;
