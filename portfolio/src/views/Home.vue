@@ -22,7 +22,9 @@
       </div>
     </section>
     
-    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#006deb" fill-opacity="1" d="M0,160L80,176C160,192,320,224,480,213.3C640,203,800,149,960,138.7C1120,128,1280,160,1360,176L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#006deb" fill-opacity="1" d="M0,160L80,176C160,192,320,224,480,213.3C640,203,800,149,960,138.7C1120,128,1280,160,1360,176L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+    </svg>
 
     <section class="about global-container">
       <h2>About Me</h2>
@@ -117,11 +119,10 @@ export default {
   }
   .wave {
     width: 100%;
-    /* display: block; */
+    /* height: 100%; */
+    display: block;
     transform-origin: bottom;
     animation: animateWave 1.5s ease-in-out forwards;
-  }
-  .wave {
     margin-top: -3rem;
   }
   .inverted {
@@ -167,7 +168,7 @@ export default {
     right: 0;
     font-size: 2rem;
     background-color: var(--main-color);
-    border: .15rem solid var(--accent-color);
+    border: .15rem solid var(--white);
     border-radius: 10rem;
     box-shadow: var(--box-shadow);
     padding: 1.5rem;
@@ -179,6 +180,8 @@ export default {
     color: var(--white);
     text-align: center;
     background-color: var(--main-color);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     margin-top: -.5rem;
   }
   .about h2 {

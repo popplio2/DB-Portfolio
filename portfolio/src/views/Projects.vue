@@ -3,7 +3,7 @@
     <HalfNav />
     <h2>My Projects</h2>
     <div class="projects-container global-container">
-      <ProjectCard v-for="project in projects" :key="project.title" :project="project">
+      <ProjectCard v-for="project in projects" :key="project.title" :project="project" class="project-card">
         <img :src="project.image" alt="">
         <template v-slot:text>
           <h3>{{ project.title }}</h3>
@@ -84,7 +84,7 @@ export default {
     border-radius: 1rem;
     transition: all .3s;
   }
-  img:hover {
+  .project-card:hover img {
     filter: brightness(90%);
   }
   .projects-container {

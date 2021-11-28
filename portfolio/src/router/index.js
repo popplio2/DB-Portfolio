@@ -52,6 +52,10 @@ const routes = [
     component: () => 
       import(/* webpackChunkName: "project" */ "../views/Galgudd.vue"),
   },
+  {
+    path: '/*',
+    redirect: { name: 'Projects' }
+  }
 ];
 
 const router = createRouter({
