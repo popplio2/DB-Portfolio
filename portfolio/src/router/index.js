@@ -53,8 +53,10 @@ const routes = [
       import(/* webpackChunkName: "project" */ "../views/Galgudd.vue"),
   },
   {
-    path: '/*',
-    redirect: { name: 'Projects' }
+    path: '/:pathMatch(.*)*',
+    name: 'Projects',
+    component: () =>
+      import(/* webpackChunkName: "projects" */ "../views/Projects.vue"),
   }
 ];
 
