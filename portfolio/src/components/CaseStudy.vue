@@ -47,7 +47,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped> 
   .header {
       margin: 3rem 0;
   }
@@ -62,6 +62,15 @@ export default {
     margin-right: 1rem;
     margin-bottom: .75rem;
   }
+  .header-info {
+    margin: 2rem 0;
+  }
+  .article h2 {
+      margin-top: 2rem;
+  }
+</style>
+
+<style>
   .header img {
     object-fit: cover;
     object-position: center;
@@ -71,19 +80,8 @@ export default {
     border-radius: 1rem;
     transition: all .3s;
   }
-  .header-info {
-    margin: 2rem 0;
+  .header a {
+    margin-right: 1rem;
+    margin-bottom: .75rem;
   }
-  .article h2 {
-      margin-top: 2rem;
-  }
-  /* .article img {
-    object-fit: cover;
-    object-position: left;
-    max-width: 100%;
-    min-width: 0%;
-    margin: 1rem;
-    border-radius: 1rem;
-    transition: all .3s;
-  } */
 </style>

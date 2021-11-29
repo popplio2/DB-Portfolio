@@ -19,6 +19,9 @@ import ProjectCard from '@/components/ProjectCard.vue';
 import HalfNav from '../components/HalfNav.vue';
 
 export default {
+  mounted() {
+    window.scrollTo(0, 0);
+  },
   data() {
     return {
       projects: [

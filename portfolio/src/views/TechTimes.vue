@@ -29,6 +29,9 @@ import CaseStudy from '@/components/CaseStudy.vue';
 import Button from '@/components/Button.vue';
 
 export default {
+  mounted() {
+    window.scrollTo(0, 0);
+  },
   components: {
     FullNav,
     CaseStudy,

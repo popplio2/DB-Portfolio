@@ -4,8 +4,7 @@
       <div class="title-container">
         <h1>👋 I'm Daniel Briskman</h1>
         <div class="subtitle">
-          <p>I ideate. I innovate.</p>
-          <p class="bold">I create.</p>
+          <p>I ideate. I innovate. <strong>I create.</strong></p>
         </div>
 
         <div class="img-and-btn">
@@ -106,7 +105,8 @@ export default {
     text-align: center;
     color: var(--main-color);
   }
-  .landing p {
+  .landing p,
+  .landing strong {
     font-size: 2rem;
     margin-right: .5rem;
   }
@@ -114,9 +114,6 @@ export default {
     display: flex;
     justify-content: center;
     margin-bottom: 5rem;
-  }
-  .bold {
-    font-weight: 700;
   }
   .clip {
     display: none;
