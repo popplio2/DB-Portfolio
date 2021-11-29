@@ -52,11 +52,6 @@ const routes = [
     component: () => 
       import(/* webpackChunkName: "project" */ "../views/Galgudd.vue"),
   },
-  {
-    path: '/:pathMatch(.*)*',
-    name: 'Home',
-    component: Home,
-  }
 ];
 
 const router = createRouter({

@@ -25,12 +25,13 @@
     <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#006deb" fill-opacity="1" d="M0,160L80,176C160,192,320,224,480,213.3C640,203,800,149,960,138.7C1120,128,1280,160,1360,176L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
     </svg>
-
+    <div class="clip clip-inverted"></div>
     <section class="about global-container">
       <h2>About Me</h2>
       <q>I can see my improvement and it motivates me to keep going.</q>
       <p>Hello, world! I'm Daniel Briskman, a front-end developer who emphasizes sleek user interfaces and pleasant user experiences. My interest in programming stemmed from an interest in User Experience Design (UX Design), which I took online courses to learn about. I also taught myself how to use Figma to design wireframes and prototypes. My knowledge of UX served me well when I took a computer science class, and I found computer science an even better fit for me. One of the things I love about programming is that there is a rather clear path towards skill. I can see my improvement and it motivates me to keep going.</p>
     </section>
+    <div class="clip"></div>
 
     <svg class="wave inverted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#006deb" fill-opacity="1" d="M0,128L60,128C120,128,240,128,360,149.3C480,171,600,213,720,218.7C840,224,960,192,1080,170.7C1200,149,1320,139,1380,133.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
@@ -47,7 +48,7 @@
               HTML, CSS, & JavaScript
             </li>
             <li>
-              <font-awesome-icon icon="code-branch" />
+              <font-awesome-icon icon="sitemap" />
               Vue.js (JS framework)
             </li>
             <li>
@@ -94,12 +95,12 @@ export default {
 
 <style scoped>
   h2 {
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
   }
   .landing {
     display: flex;
     justify-content: center;
-    margin-top: 7rem;
+    margin-top: 5rem;
   }
   .landing h1 {
     text-align: center;
@@ -116,6 +117,17 @@ export default {
   }
   .bold {
     font-weight: 700;
+  }
+  .clip {
+    display: none;
+    height: 10rem;
+    background-color: var(--main-color);
+    clip-path: ellipse(50% 30% at 50% 0%);
+  }
+  .clip-inverted {
+    background-color: var(--white);
+    z-index: 1;
+    margin-bottom: -10rem;
   }
   .wave {
     width: 100%;
@@ -180,20 +192,14 @@ export default {
     color: var(--white);
     text-align: center;
     background-color: var(--main-color);
-    padding-top: 5rem;
-    padding-bottom: 5rem;
     margin-top: -.5rem;
-  }
-  .about h2 {
-    margin-bottom: 1rem;
   }
   .about q {
     font-size: 1.8rem;
     font-style: italic;
-    /* font-weight: 500; */
   }
   .about p {
-    margin-top: 3rem;
+    margin-top: 2rem;
     text-align: left;
     line-height: 1.7;
   }
@@ -246,7 +252,21 @@ export default {
     margin-right: 1rem;
     color: var(--main-color);
   }
-
+@media only screen and (max-width: 1200px) {
+  .wave {
+    display: none;
+  }
+  .clip {
+    display: block;
+  }
+  .about {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+  }
+  .skills, .about {
+    margin-top: 0;
+  }
+}
 @media only screen and (max-width: 600px) {
     .img-and-btn {
       flex-direction: column;
@@ -254,9 +274,6 @@ export default {
     }
     .img-and-btn button {
       margin-bottom: 3rem;
-    }
-    .skills {
-      margin-top: -2rem;
     }
 }
 </style>

@@ -1,74 +1,82 @@
 <template>
    <div class="global-container">
-        <header>
-            <h2>Project Title</h2>
-            <img src="../assets/scrappy.png" alt="">
-            <!-- ➤ -->
-            <a href="https://scrappynotes.netlify.app" target="blank">
-                <Button>See the website ➤</Button>
-            </a>
-            <a href="https://github.com/staten-island-tech/vue-reactivity-project-popplio2" target="blank">
-                <Button>Read the code ➤</Button>
-            </a>
-            <p><b>Team Size:</b> Individual</p>
-            <p><b>Tools:</b> languages, Figma</p>  
+        <header class="header">
+            <h1>
+                <slot name="title"></slot>
+            </h1>
+            <slot name="image"></slot>
+            <slot name="buttons"></slot>
+
+            <div class="header-info">
+                <p><b>Team Size:</b>
+                <slot name="team"></slot>
+                </p>
+                <p><b>Tools:</b> 
+                    <slot name="tools"></slot>
+                </p>  
+            </div>
         </header>
         
-        <article>
-            <h3>Overview</h3>
-            <p>Here is what we were trying to do. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur recusandae maxime aspernatur necessitatibus aut! Deserunt deleniti maiores doloribus! Quia esse distinctio cumque maiores unde est voluptatum debitis ad suscipit obcaecati?</p>
+        <article class="article">
+            <h2>Overview</h2>
+            <p>
+                <slot name="overview"></slot>
+            </p>
         </article>
 
-        <article>
-            <h3>Process</h3>
-            <p>Here is how we did it. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque ipsum incidunt mollitia fugiat ipsa, distinctio veniam ipsam quia quis iure quae? Eaque minus quisquam tenetur, repellendus veniam veritatis aliquam dignissimos!</p>
-            <div class="image-container">
-                <img src="../assets/pokecatch.png" alt="">
-                <img src="../assets/pokecatch.png" alt="">
-                <img src="../assets/pokecatch.png" alt="">
-            </div>
+        <article class="article">
+            <h2>Process</h2>
+            <p>
+                <slot name="process"></slot>
+            </p>
         </article>
 
-        <article>
-            <h3>Reflection</h3>
-            <p>Here is our outcome and what would be our next steps. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas fugit earum dignissimos reiciendis suscipit commodi modi corporis similique repellat itaque doloremque dicta cupiditate debitis, facere, obcaecati deleniti id officiis architecto.</p>
-        </article>
+        <article class="article">
+            <h2>Reflection</h2>
+            <p>
+                <slot name="reflection"></slot>
+            </p>
+        </article> 
    </div>
 </template>
-
+    
 <script>
-import Button from '@/components/Button.vue';
 export default {
     components: {
-        Button
     }
 }
 </script>
 
-<style scoped>
-  h2 {
+<style>
+  .header {
+      margin: 3rem 0;
+  }
+  .header h1, h2{
+    color: var(--main-color);
     text-align: center;
+  }
+  .header h1 {
     margin-top: 3rem;
   }
-  header a {
-      display: block;
+  .header a {
+    margin-right: 1rem;
   }
-  header img {
+  .header img {
     object-fit: cover;
-    object-position: center;
+    object-position: left;
     width: 100%;
     height: 30rem;
-    margin-right: 2rem;
+    margin: 2rem 0;
     border-radius: 1rem;
     transition: all .3s;
   }
-  .image-container {
-    width: 100%;
-    height: 50rem;
-    display: flex;
-    justify-content: center;
+  .header-info {
+    margin: 2rem 0;
   }
-  article img {
+  .article h2 {
+      margin-top: 2rem;
+  }
+  /* .article img {
     object-fit: cover;
     object-position: left;
     max-width: 100%;
@@ -76,5 +84,5 @@ export default {
     margin: 1rem;
     border-radius: 1rem;
     transition: all .3s;
-  }
+  } */
 </style>

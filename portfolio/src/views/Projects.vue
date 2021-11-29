@@ -69,11 +69,12 @@ export default {
 </script>
 
 <style scoped>
+  h2, h3 {
+    color: var(--main-color);
+  }
   h2 {
     text-align: center;
-    color: var(--main-color);
-    margin-top: 7rem;
-    margin-bottom: 3rem;
+    margin: 3rem 0;
   }
   img {
     object-fit: cover;
@@ -84,7 +85,7 @@ export default {
     border-radius: 1rem;
     transition: all .3s;
   }
-  .project-card:hover img {
+  img:hover {
     filter: brightness(90%);
   }
   .projects-container {
