@@ -60,10 +60,11 @@ export default {
   }
   .header a {
     margin-right: 1rem;
+    margin-bottom: .75rem;
   }
   .header img {
     object-fit: cover;
-    object-position: left;
+    object-position: center;
     width: 100%;
     height: 30rem;
     margin: 2rem 0;

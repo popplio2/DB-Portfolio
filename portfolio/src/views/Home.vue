@@ -74,9 +74,9 @@
             </li>
           </ul>
         </div>
-        <!-- <router-link class="button-link" to="/projects">
+        <router-link class="button-link" to="/projects">
           <Button>See them in action ➤</Button>
-        </router-link> -->
+        </router-link>
       </div>
     </section>
     
@@ -205,6 +205,7 @@ export default {
   }
   .skills {
     margin-top: -5rem;
+    margin-bottom: 5rem;
   }
   .skills h2 {
     color: var(--main-color);
