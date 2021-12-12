@@ -72,10 +72,8 @@ export default {
 </script>
 
 <style scoped>
-  h2, h3 {
-    color: var(--main-color);
-  }
   h2 {
+    color: var(--main-color);
     text-align: center;
     margin: 3rem 0;
   }
