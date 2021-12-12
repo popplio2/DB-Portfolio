@@ -14,12 +14,18 @@
                 <Button>Read the code ➤</Button>
             </a>
           </template>
-          <template v-slot:team> Individual</template>
-          <template v-slot:tools> Vue.js</template>
-          <template v-slot:overview>This is what I did basically!</template>
-          <template v-slot:process>I did it this way...</template>
-          <template v-slot:reflection>I messed up a lot but still good.</template>
-
+          <template v-slot:info>
+             <p><b>Team Size:</b>
+                Individual
+              </p>
+              <p><b>Course:</b> 
+                AP Computer Science Principles (12th grade)
+              </p> 
+              <p><b>Tools:</b> 
+                HTML, CSS, JavaScript
+              </p> 
+          </template>
+          <template v-slot:overview>Scrappy Notes is an app built in the Vue.js JavaScript framework, and it serves to provide a creative space for writing down whatever you need to write or whatever comes to mind. The most important part of the app lies in the user’s ability to choose what color note they want. I accomplished this using Vue v-for directive, which allowed me to iterate over an array that kept track of all of the notes the user has created (and their colors), and Vue props, which allowed me to pass data containing the color of each note to a reusable note component, in which I dynamically styled the note according to its corresponding color.</template>
         </CaseStudy>
     </div>
 </template>

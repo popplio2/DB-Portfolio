@@ -14,12 +14,18 @@
                 <Button>Read the code ➤</Button>
             </a>
           </template>
-          <template v-slot:team> Individual</template>
-          <template v-slot:tools> HTML, SCSS, JavaScript</template>
-          <template v-slot:overview>This is what I did basically!</template>
-          <template v-slot:process>I did it this way...</template>
-          <template v-slot:reflection>I messed up a lot but still good.</template>
-
+          <template v-slot:info>
+             <p><b>Team Size:</b>
+                Individual
+              </p>
+              <p><b>Course:</b> 
+                AP Computer Science Principles(12th grade)
+              </p> 
+              <p><b>Tools:</b> 
+                HTML, CSS, JavaScript
+              </p> 
+          </template>
+          <template v-slot:overview>Poké-Catch is my first project from my AP Computer Science Principles (AP CSP) course. Built to satisfy the requirements of the AP CSP Create Task, Poké-Catch retrieves data about a random Pokémon in the PokéAPI and displays the data to the user, giving the user the ability to catch the Pokémon, which would save it in the Pokédex displayed on the screen. This is accomplished by storing the caught Pokémon in an array, in which they are sorted according to their official Pokédex number using built-in JavaScript methods.</template>
         </CaseStudy>
     </div>
 </template>

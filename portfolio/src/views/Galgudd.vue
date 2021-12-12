@@ -14,12 +14,18 @@
                 <Button>Read the code ➤</Button>
             </a>
           </template>
-          <template v-slot:team> Partner</template>
-          <template v-slot:tools> HTML, SCSS, JavaScript, Figma</template>
-          <template v-slot:overview>This is what I did basically!</template>
-          <template v-slot:process>I did it this way...</template>
-          <template v-slot:reflection>I messed up a lot but still good.</template>
-
+          <template v-slot:info>
+             <p><b>Team Size:</b>
+                Partner
+              </p>
+              <p><b>Course:</b> 
+                Computer Science (11th grade)
+              </p> 
+              <p><b>Tools:</b> 
+                HTML, SCSS, JavaScript, Figma
+              </p> 
+          </template>
+          <template v-slot:overview>For my first major project in my junior-year computer science class, I partnered up with a classmate to create a website that advertised a country—or in our case, a fictional kingdom. The website leverages CSS responsive design principles to display different versions of sections depending on the device that the user is viewing the website on. The website also makes full use of CSS hover effects to create an interactive user experience. I was mainly responsible for the home, attractions, and wildlife sections, as well as the nav and the footer. Before coding the site, my partner and I designed high-fidelity wireframes in Figma.</template>
         </CaseStudy>
     </div>
 </template>

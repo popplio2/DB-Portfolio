@@ -28,7 +28,7 @@
     <section class="about global-container">
       <h2>About Me</h2>
       <q>I can see my improvement and it motivates me to keep going.</q>
-      <p><b>Hello, world!</b> I'm Daniel Briskman, a front-end developer who emphasizes sleek user interfaces and pleasant user experiences. My interest in programming stemmed from an interest in User Experience Design (UX Design), which I took online courses to learn about. I also taught myself how to use Figma to design wireframes and prototypes. My knowledge of UX served me well when I took a computer science class, and I found computer science an even better fit for me. One of the things I love about programming is that there is a rather clear path towards skill. I can see my improvement and it motivates me to keep going.</p>
+      <p><b>Hello, world!</b> I'm Daniel Briskman, a 17 year-old frontend developer who emphasizes efficient code and pleasant user experiences. My interest in programming stemmed from an interest in User Experience Design (UX Design), which I took online courses to learn about. I also taught myself how to use Figma to design wireframes and prototypes. My knowledge of UX served me well when I took a computer science class, and I found computer science an even better fit for me. One thing I love about programming is that there are so many resources online at my disposal that I can use to improve.</p>
     </section>
     <div class="clip"></div>
 
@@ -78,32 +78,18 @@
         </router-link>
       </div>
     </section>
-
-    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#006deb" fill-opacity="1" d="M0,160L80,176C160,192,320,224,480,213.3C640,203,800,149,960,138.7C1120,128,1280,160,1360,176L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-    </svg>
-    <div class="clip clip-inverted"></div>
-    <footer class="footer global-container">
-      <h2>Get in touch!</h2>
-      <p>
-        <font-awesome-icon icon="paper-plane" />
-        briskmandaniel@gmail.com</p>
-      <p>
-        <font-awesome-icon icon="phone" />
-        347-533-3119</p>
-      <a href="https://github.com/popplio2" target="blank">
-        <Button>Check out my Github ➤</Button>
-      </a>
-    </footer>    
+  <Footer />
   </div>
 </template>
 
 <script>
 import Button from '@/components/Button.vue';
+import Footer from '@/components/Footer.vue';
 
 export default {
   components: {
-    Button
+    Button,
+    Footer
   }
 }
 </script>
@@ -131,40 +117,10 @@ export default {
     justify-content: center;
     margin-bottom: 5rem;
   }
-  .clip {
-    display: none;
-    height: 10rem;
-    background-color: var(--main-color);
-    clip-path: ellipse(50% 30% at 50% 0%);
-  }
-  .clip-inverted {
-    background-color: var(--white);
-    z-index: 1;
-    margin-bottom: -10rem;
-  }
-  .wave {
-    width: 100%;
-    /* height: 100%; */
-    display: block;
-    transform-origin: bottom;
-    animation: animateWave 1.5s ease-in-out forwards;
-    margin-top: -3rem;
-  }
   .inverted {
     margin-top: 0;
     transform-origin: top;
   }
-    @keyframes animateWave {
-      0% {
-        transform: scale(1, .6);
-      }
-      50% {
-        transform: scale(1, .8);
-      }
-      100% {
-        transform: scale(1, .6);
-      }
-    }
   .img-and-btn {
     display: flex;
     justify-content: space-between;
@@ -220,8 +176,7 @@ export default {
     line-height: 1.7;
   }
   .skills {
-    margin-top: -5rem;
-    margin-bottom: 5rem;
+    margin: -8rem 0;
   }
   .skills h2 {
     color: var(--main-color);
@@ -270,19 +225,6 @@ export default {
     color: var(--main-color);
   }
 
-  .footer {
-    background-color: var(--main-color);
-    color: var(--white);
-    padding-bottom: 8rem;
-    margin-top: -.5rem;
-  }
-  .footer svg {
-    margin-right: .5rem;
-  }
-  .footer p {
-    margin-bottom: 1rem;
-  }
-
 @media only screen and (max-width: 1200px) {
   .wave {
     display: none;
@@ -293,21 +235,67 @@ export default {
   .landing {
     margin-bottom: 5rem;
   }
-  .about, .footer {
+  .about {
     padding-top: 8rem;
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
   }
-  .skills, .about {
+  .skills {
     margin-top: 0;
+    margin-bottom: 3rem;
   }
 }
 @media only screen and (max-width: 600px) {
-    .img-and-btn {
-      flex-direction: column;
-      align-items: center;
-    }
-    .img-and-btn button {
-      margin-bottom: 3rem;
-    }
+  .subtitle {
+    margin-bottom: 3rem;
+  }
+  .img-and-btn {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-link {
+    align-self: unset;
+    margin-bottom: 4rem;
+  }
+}
+</style>
+
+<style>
+  .clip {
+    display: none;
+    height: 10rem;
+    background-color: var(--main-color);
+    clip-path: ellipse(50% 30% at 50% 0%);
+  }
+  .clip-inverted {
+    background-color: var(--white);
+    z-index: 1;
+    margin-bottom: -10rem;
+  }
+  .wave {
+    width: 100%;
+    /* height: 100%; */
+    display: block;
+    transform-origin: bottom;
+    animation: animateWave 1.5s ease-in-out forwards;
+    margin-top: -3rem;
+  }
+  @keyframes animateWave {
+      0% {
+        transform: scale(1, .6);
+      }
+      50% {
+        transform: scale(1, .8);
+      }
+      100% {
+        transform: scale(1, .6);
+      }
+  }
+@media only screen and (max-width: 1200px) {
+  .wave {
+    display: none;
+  }
+  .clip {
+    display: block;
+  }
 }
 </style>

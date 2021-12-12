@@ -11,12 +11,14 @@
         </template>
       </ProjectCard>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import ProjectCard from '@/components/ProjectCard.vue';
 import HalfNav from '../components/HalfNav.vue';
+import Footer from '../components/Footer.vue';
 
 export default {
   mounted() {
@@ -26,17 +28,23 @@ export default {
     return {
       projects: [
         {
+          title: 'My Portfolio',
+          path: 'portfolio',
+          image: require('../assets/portfolio.png'),
+          description: 'How I built the portfolio you are currently viewing (and hopefully enjoying).'
+        },
+        {
           title: 'Scrappy Notes',
           path: 'scrappy-notes',
           image: require('../assets/scrappy.png'),
           description: 'Note-taking website that utilizes Vue.js for data-binding and reactive UI development.'
         },
-        {
-          title: 'Poké-Catch',
-          path: 'poké-catch',
-          image: require('../assets/pokecatch.png'),
-          description: 'Pokémon catcher that fetches API data and reacts to user input. Created for the AP CSP "Create Task".'
-        },
+        // {
+        //   title: 'Poké-Catch',
+        //   path: 'poké-catch',
+        //   image: require('../assets/pokecatch.png'),
+        //   description: 'Pokémon catcher that fetches API data and reacts to user input. Created for the AP CSP "Create Task".'
+        // },
         {
           title: 'Tech Times',
           path: 'tech-times',
@@ -66,7 +74,8 @@ export default {
   },
   components: {
     ProjectCard,
-    HalfNav
+    HalfNav,
+    Footer
   }
 }
 </script>

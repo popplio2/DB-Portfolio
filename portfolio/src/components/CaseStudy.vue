@@ -8,12 +8,7 @@
             <slot name="buttons"></slot>
 
             <div class="header-info">
-                <p><b>Team Size:</b>
-                <slot name="team"></slot>
-                </p>
-                <p><b>Tools:</b> 
-                    <slot name="tools"></slot>
-                </p>  
+              <slot name="info"></slot>
             </div>
         </header>
         
@@ -23,31 +18,24 @@
                 <slot name="overview"></slot>
             </p>
         </article>
-
-        <article class="article">
-            <h2>Process</h2>
-            <p>
-                <slot name="process"></slot>
-            </p>
-        </article>
-
-        <article class="article">
-            <h2>Reflection</h2>
-            <p>
-                <slot name="reflection"></slot>
-            </p>
-        </article> 
    </div>
+   <Footer />
 </template>
     
 <script>
+
+import Footer from './Footer.vue'
 export default {
     components: {
+        Footer
     }
 }
 </script>
 
 <style scoped> 
+  .global-container {
+    padding: 0 10%;
+  }
   .header {
       margin: 3rem 0;
   }
@@ -77,6 +65,7 @@ export default {
     width: 100%;
     height: 30rem;
     margin: 2rem 0;
+    border: .2rem solid var(--accent-color);
     border-radius: 1rem;
     transition: all .3s;
   }
