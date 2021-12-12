@@ -4,11 +4,11 @@
       <div class="title-container">
         <h1>👋 I'm Daniel Briskman</h1>
         <div class="subtitle">
-          <p>I ideate. I innovate. <strong>I create.</strong></p>
+          <p>I ideate. I iterate. <strong>I create.</strong></p>
         </div>
 
         <div class="img-and-btn">
-          <router-link class="button-link" to="/projects">
+          <router-link class="home-link" to="/projects">
             <Button>See my projects ➤</Button>
           </router-link>
           <img src="../assets/memoji.svg" alt="a memoji of Daniel Briskman working on his laptop">
@@ -28,7 +28,7 @@
     <section class="about global-container">
       <h2>About Me</h2>
       <q>I can see my improvement and it motivates me to keep going.</q>
-      <p>Hello, world! I'm Daniel Briskman, a front-end developer who emphasizes sleek user interfaces and pleasant user experiences. My interest in programming stemmed from an interest in User Experience Design (UX Design), which I took online courses to learn about. I also taught myself how to use Figma to design wireframes and prototypes. My knowledge of UX served me well when I took a computer science class, and I found computer science an even better fit for me. One of the things I love about programming is that there is a rather clear path towards skill. I can see my improvement and it motivates me to keep going.</p>
+      <p><b>Hello, world!</b> I'm Daniel Briskman, a front-end developer who emphasizes sleek user interfaces and pleasant user experiences. My interest in programming stemmed from an interest in User Experience Design (UX Design), which I took online courses to learn about. I also taught myself how to use Figma to design wireframes and prototypes. My knowledge of UX served me well when I took a computer science class, and I found computer science an even better fit for me. One of the things I love about programming is that there is a rather clear path towards skill. I can see my improvement and it motivates me to keep going.</p>
     </section>
     <div class="clip"></div>
 
@@ -73,12 +73,28 @@
             </li>
           </ul>
         </div>
-        <router-link class="button-link" to="/projects">
+        <router-link class="skills-link" to="/projects">
           <Button>See them in action ➤</Button>
         </router-link>
       </div>
     </section>
-    
+
+    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#006deb" fill-opacity="1" d="M0,160L80,176C160,192,320,224,480,213.3C640,203,800,149,960,138.7C1120,128,1280,160,1360,176L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+    </svg>
+    <div class="clip clip-inverted"></div>
+    <footer class="footer global-container">
+      <h2>Get in touch!</h2>
+      <p>
+        <font-awesome-icon icon="paper-plane" />
+        briskmandaniel@gmail.com</p>
+      <p>
+        <font-awesome-icon icon="phone" />
+        347-533-3119</p>
+      <a href="https://github.com/popplio2" target="blank">
+        <Button>Check out my Github ➤</Button>
+      </a>
+    </footer>    
   </div>
 </template>
 
@@ -152,6 +168,9 @@ export default {
   .img-and-btn {
     display: flex;
     justify-content: space-between;
+  }
+  .home-link {
+    align-self: flex-start;
   }
   .img-and-btn img {
     height: 20rem;
@@ -243,13 +262,27 @@ export default {
   .skills-table li:last-child {
     border-bottom: none;
   }
-  .skills-table a {
+  .skills-link {
     margin: 1.5rem;
   }
   .skills-table svg {
     margin-right: 1rem;
     color: var(--main-color);
   }
+
+  .footer {
+    background-color: var(--main-color);
+    color: var(--white);
+    padding-bottom: 8rem;
+    margin-top: -.5rem;
+  }
+  .footer svg {
+    margin-right: .5rem;
+  }
+  .footer p {
+    margin-bottom: 1rem;
+  }
+
 @media only screen and (max-width: 1200px) {
   .wave {
     display: none;
@@ -257,7 +290,10 @@ export default {
   .clip {
     display: block;
   }
-  .about {
+  .landing {
+    margin-bottom: 5rem;
+  }
+  .about, .footer {
     padding-top: 8rem;
     padding-bottom: 5rem;
   }
