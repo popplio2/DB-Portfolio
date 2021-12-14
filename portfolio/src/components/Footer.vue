@@ -5,12 +5,14 @@
     <div class="clip clip-inverted"></div>
     <footer class="footer global-container">
       <h2>Get in touch!</h2>
-      <p>
-        <font-awesome-icon icon="paper-plane" />
-        briskmandaniel@gmail.com</p>
-      <p>
-        <font-awesome-icon icon="phone" />
-        347-533-3119</p>
+      <a href="mailto:briskmandaniel@gmail.com">
+        <font-awesome-icon icon="paper-plane"/>
+        briskmandaniel@gmail.com
+      </a>
+      <a>
+        <font-awesome-icon icon="phone"/>
+        347-533-3119
+      </a>
       <a href="https://github.com/popplio2" target="blank">
         <Button>Check out my Github ➤</Button>
       </a>
@@ -36,8 +38,15 @@ export default {
   .footer svg {
     margin-right: .5rem;
   }
-  .footer p {
-    margin-bottom: 1rem;
+  .footer a {
+    display: block;
+    text-decoration: none;
+    font-size: var(--p);
+    color: var(--white);
+    margin: 1rem 0;
+  }
+  .clip {
+    margin-top: 5rem;
   }
 
 @media only screen and (max-width: 1200px) {
