@@ -19,15 +19,18 @@
             </p>
         </article>
    </div>
+   <EmailButton />
    <Footer />
 </template>
     
 <script>
+import EmailButton from './EmailButton.vue'
 
 import Footer from './Footer.vue'
 export default {
     components: {
-        Footer
+        Footer,
+        EmailButton
     }
 }
 </script>

@@ -13,10 +13,8 @@
           </router-link>
           <img src="../assets/memoji.svg" alt="a memoji of Daniel Briskman working on his laptop">
         </div>
-        
-          <a class="email-btn" href="mailto:briskmandaniel@gmail.com">
-            <font-awesome-icon icon="paper-plane" />
-          </a>
+
+        <EmailButton />
 
       </div>
     </section>
@@ -84,11 +82,13 @@
 <script>
 import Button from '@/components/Button.vue';
 import Footer from '@/components/Footer.vue';
+import EmailButton from '@/components/EmailButton.vue';
 
 export default {
   components: {
     Button,
-    Footer
+    Footer,
+    EmailButton
   }
 }
 </script>
@@ -145,20 +145,6 @@ export default {
         transform: scale(100%);
       }
     }
-  .email-btn {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    font-size: 2rem;
-    background-color: var(--main-color);
-    border: .15rem solid var(--white);
-    border-radius: 10rem;
-    box-shadow: var(--box-shadow);
-    padding: 1.5rem;
-    margin: 3%;
-    z-index: 1;
-    color: var(--white);
-  }
   .about {
     color: var(--white);
     text-align: center;

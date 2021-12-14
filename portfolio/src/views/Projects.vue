@@ -11,14 +11,16 @@
         </template>
       </ProjectCard>
     </div>
+    <EmailButton />
     <Footer />
   </div>
 </template>
 
 <script>
 import ProjectCard from '@/components/ProjectCard.vue';
-import HalfNav from '../components/HalfNav.vue';
-import Footer from '../components/Footer.vue';
+import HalfNav from '@/components/HalfNav.vue';
+import Footer from '@/components/Footer.vue';
+import EmailButton from '@/components/EmailButton.vue';
 
 export default {
   mounted() {
@@ -39,12 +41,6 @@ export default {
           image: require('../assets/scrappy.png'),
           description: 'Note-taking website that utilizes Vue.js for data-binding and reactive UI development.'
         },
-        // {
-        //   title: 'Poké-Catch',
-        //   path: 'poké-catch',
-        //   image: require('../assets/pokecatch.png'),
-        //   description: 'Pokémon catcher that fetches API data and reacts to user input. Created for the AP CSP "Create Task".'
-        // },
         {
           title: 'Tech Times',
           path: 'tech-times',
@@ -75,7 +71,8 @@ export default {
   components: {
     ProjectCard,
     HalfNav,
-    Footer
+    Footer,
+    EmailButton
   }
 }
 </script>
