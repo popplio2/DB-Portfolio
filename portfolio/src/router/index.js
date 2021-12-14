@@ -29,12 +29,6 @@ const routes = [
       import(/* webpackChunkName: "project" */ "../views/Portfolio.vue"),
   },
   {
-    path: "/poké-catch",
-    name: "PokeCatch",
-    component: () => 
-      import(/* webpackChunkName: "project" */ "../views/PokeCatch.vue"),
-  },
-  {
     path: "/tech-times",
     name: "TechTimes",
     component: () => 
