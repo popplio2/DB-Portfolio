@@ -68,7 +68,7 @@ export default {
     width: 100%;
     height: 30rem;
     margin: 2rem 0;
-    border: .2rem solid var(--accent-color);
+    box-shadow: 0 0 .5rem var(--accent-color);
     border-radius: 1rem;
     transition: all .3s;
   }
