@@ -46,10 +46,6 @@ export default {
   .header h1 {
     margin-top: 3rem;
   }
-  .header a {
-    margin-right: 1rem;
-    margin-top: .75rem;
-  }
   .header-info {
     margin: 2rem 0;
   }
@@ -65,6 +61,10 @@ export default {
 </style>
 
 <style>
+  .header a {
+    margin-right: 1rem;
+    margin-top: .75rem;
+  }
   .header img {
     object-fit: cover;
     object-position: center;
