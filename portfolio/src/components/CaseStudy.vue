@@ -75,8 +75,4 @@ export default {
     border-radius: 1rem;
     transition: all .3s;
   }
-  .header a {
-    margin-right: 1rem;
-    margin-bottom: .75rem;
-  }
 </style>

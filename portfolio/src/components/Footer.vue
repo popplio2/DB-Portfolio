@@ -43,7 +43,7 @@ export default {
     margin-right: .5rem;
   }
   .footer a {
-    display: inline-block;
+    width: fit-content;
     text-decoration: none;
     font-size: var(--p);
     color: var(--white);
