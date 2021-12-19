@@ -3,8 +3,8 @@ import App from "./App.vue";
 import router from "./router";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faCode, faSitemap, faPenNib, faTasks, faUserFriends, faMountain, faPaperPlane, faPhone } from "@fortawesome/free-solid-svg-icons";
-library.add(faCode, faSitemap, faPenNib, faTasks, faUserFriends, faMountain, faPaperPlane, faPhone);
+import { faCode, faSitemap, faPenNib, faTasks, faUserFriends, faMountain, faEnvelope, faCommentDots, faCodeBranch } from "@fortawesome/free-solid-svg-icons";
+library.add(faCode, faSitemap, faPenNib, faTasks, faUserFriends, faMountain, faEnvelope, faCommentDots, faCodeBranch);
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 const app = createApp(App);

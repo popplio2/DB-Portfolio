@@ -36,9 +36,6 @@ export default {
 </script>
 
 <style scoped> 
-  .global-container {
-    padding: 0 10%;
-  }
   .header {
       margin: 3rem 0;
   }
@@ -51,7 +48,7 @@ export default {
   }
   .header a {
     margin-right: 1rem;
-    margin-bottom: .75rem;
+    margin-top: .75rem;
   }
   .header-info {
     margin: 2rem 0;
@@ -59,6 +56,12 @@ export default {
   .article h2 {
       margin-top: 2rem;
   }
+
+@media only screen and (min-width: 1200px) {
+  .global-container {
+    padding: 0 10%;
+  }
+}
 </style>
 
 <style>

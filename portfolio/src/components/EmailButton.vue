@@ -1,6 +1,6 @@
 <template>
   <a class="email-btn" href="mailto:briskmandaniel@gmail.com">
-    <font-awesome-icon icon="paper-plane" />
+    <font-awesome-icon icon="envelope" />
   </a>
 </template>
 

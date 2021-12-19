@@ -4,17 +4,19 @@
     </svg>
     <div class="clip clip-inverted"></div>
     <footer class="footer global-container">
-      <h2>Get in touch!</h2>
+      <h2>Let's get in touch!</h2>
       <a href="mailto:briskmandaniel@gmail.com">
-        <font-awesome-icon icon="paper-plane"/>
+        <font-awesome-icon icon="envelope"/>
         briskmandaniel@gmail.com
       </a>
-      <a>
-        <font-awesome-icon icon="phone"/>
+      <a href="sms:+13475333119&body=Hello%20there!%20I%20saw%20your%20portfolio%20and...">
+        <font-awesome-icon icon="comment-dots"/>
         347-533-3119
       </a>
       <a href="https://github.com/popplio2" target="blank">
-        <Button>Check out my Github ➤</Button>
+        <Button>Check out my Github 
+          <font-awesome-icon icon="code-branch" /> 
+        </Button>
       </a>
     </footer>  
 </template>
@@ -30,6 +32,8 @@ export default {
 </script>
 <style scoped>
   .footer {
+    display: flex;
+    flex-direction: column;
     background-color: var(--main-color);
     color: var(--white);
     padding-bottom: 8rem;
@@ -39,11 +43,15 @@ export default {
     margin-right: .5rem;
   }
   .footer a {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     font-size: var(--p);
     color: var(--white);
-    margin: 1rem 0;
+    margin-top: 1.5rem;
+    transition: all .3s;
+  }
+  .footer a:hover {
+    color: var(--accent-color);
   }
   .clip {
     margin-top: 5rem;

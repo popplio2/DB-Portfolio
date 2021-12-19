@@ -25,7 +25,7 @@
     <div class="clip clip-inverted"></div>
     <section class="about global-container">
       <h2>About Me</h2>
-      <p><b>Hello, world!</b> I'm Daniel Briskman, a 17 year-old frontend developer who emphasizes efficient code and pleasant user experiences. My interest in programming stemmed from an interest in User Experience Design (UX Design), which I took online courses to learn about. I also taught myself how to use Figma to design wireframes and prototypes. My knowledge of UX served me well when I took a computer science class, and I found computer science an even better fit for me. One thing I love about programming is that there are so many resources online at my disposal that I can use to improve.</p>
+      <p><b>Hello, world!</b> I'm Daniel Briskman, a 17 year-old front-end developer who emphasizes efficient code and pleasant user experiences. My interest in programming stemmed from an interest in User Experience Design (UX Design), which I took online courses to learn about. I also taught myself how to use Figma to design wireframes and prototypes. My knowledge of UX served me well when I took a computer science class, and I found computer science an even better fit for me. I've worked on front-end projects so far, but this year I'm excited to learn more about back-end development in my AP Computer Science Principles class.</p>
     </section>
     <div class="clip"></div>
 
@@ -174,7 +174,7 @@ export default {
     padding: 3rem 1rem;
     padding-bottom: 2rem;
     margin: 1.5rem;
-    border-radius: 5rem;
+    border-radius: 3rem;
     height: fit-content;
     transition: all .3s;
   }
