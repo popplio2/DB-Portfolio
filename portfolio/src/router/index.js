@@ -17,37 +17,37 @@ const routes = [
       import(/* webpackChunkName: "projects" */ "../views/Projects.vue"),
   },
   {
-    path: "/scrappy-notes",
-    name: "ScrappyNotes",
-    component: () => 
-      import(/* webpackChunkName: "project" */ "../views/ScrappyNotes.vue"),
-  },
-  {
-    path: "/portfolio",
+    path: "/projects/portfolio",
     name: "Portfolio",
     component: () => 
       import(/* webpackChunkName: "project" */ "../views/Portfolio.vue"),
   },
   {
-    path: "/tech-times",
+    path: "/projects/scrappy-notes",
+    name: "ScrappyNotes",
+    component: () => 
+      import(/* webpackChunkName: "project" */ "../views/ScrappyNotes.vue"),
+  },
+  {
+    path: "/projects/tech-times",
     name: "TechTimes",
     component: () => 
       import(/* webpackChunkName: "project" */ "../views/TechTimes.vue"),
   },
   {
-    path: "/d&d-one-shot",
+    path: "/projects/d&d-one-shot",
     name: "DndOneShot",
     component: () => 
       import(/* webpackChunkName: "project" */ "../views/DndOneShot.vue"),
   },
   {
-    path: "/choose-your-own-adventure",
+    path: "/projects/choose-your-own-adventure",
     name: "Adventure",
     component: () => 
       import(/* webpackChunkName: "project" */ "../views/Adventure.vue"),
   },
   {
-    path: "/kingdom-of-galgudd",
+    path: "/projects/kingdom-of-galgudd",
     name: "Galgudd",
     component: () => 
       import(/* webpackChunkName: "project" */ "../views/Galgudd.vue"),

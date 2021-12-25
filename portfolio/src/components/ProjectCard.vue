@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="'/' + project.path">
+  <router-link :to="'/projects/' + project.path">
     <article>
       <slot></slot>
       <div>
