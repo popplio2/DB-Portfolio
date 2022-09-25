@@ -30,6 +30,12 @@ export default {
     return {
       projects: [
         {
+          title: 'Riddler on the Roof',
+          path: 'riddler',
+          image: require('../assets/riddler.png'),
+          description: 'Full-stack puzzle RPG built in Vue 3 that tracks user data with Vuex and saves it with MongoDB.'
+        },
+        {
           title: 'My Portfolio',
           path: 'portfolio',
           image: require('../assets/portfolio.png'),

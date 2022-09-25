@@ -25,7 +25,9 @@
     <div class="clip clip-inverted"></div>
     <section class="about global-container">
       <h2>About Me</h2>
-      <p><b>Hello, world!</b> I'm Daniel Briskman, a 17 year-old front-end developer who emphasizes efficient code and pleasant user experiences. My interest in programming stemmed from an interest in User Experience Design (UX Design), which I took online courses to learn about. I also taught myself how to use Figma to design wireframes and prototypes. My knowledge of UX served me well when I took a computer science class, and I found computer science an even better fit for me. I've worked on front-end projects so far, but this year I'm excited to learn more about back-end development in my AP Computer Science Principles class.</p>
+      <p><b>Hello, world!</b> I'm Daniel Briskman, an 18 year-old web developer who emphasizes efficient code and pleasant user experiences.</p>
+      <p>My interest in programming stems from an interest in User Experience Design (UX Design), which I took online courses to learn about. I also taught myself how to use Figma to design wireframes and prototypes.</p>
+      <p>My knowledge of UX served me well when I took computer science classes in high school, and I found computer science an even better fit for me. I've worked on mostly front-end projects so far, but I also led a Full-Stack project called "Riddler on the Roof" in my AP Computer Science Principles class. I'm in college now, and I'm currently pursuing a B.S. in Computer Science at Stony Brook University!</p>
     </section>
     <div class="clip"></div>
 
@@ -42,10 +44,14 @@
             <li>
               <font-awesome-icon icon="code" />
               HTML, CSS, & JavaScript
-            </li>
+              </li>
             <li>
               <font-awesome-icon icon="sitemap" />
-              Vue.js (JS framework)
+              Vue.js, Vuex
+            </li>
+            <li>
+              <font-awesome-icon icon="database" />
+              MongoDB and Express
             </li>
             <li>
               <font-awesome-icon icon="pen-nib" />

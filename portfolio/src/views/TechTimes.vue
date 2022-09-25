@@ -28,7 +28,13 @@
                 Nuxt.js, Figma
               </p> 
           </template>
-          <template v-slot:overview>Tech Times is an open-source newspaper application built in Nuxt.js that allows students in our school to post articles and for other students to read them. Until we developed Tech Times, our newspaper club had nowhere to publish its articles. Now, Tech Times will be used by our school's newspaper club and Journalism class. Though I worked in a front-end capacity, I collaborated with both front-end and back-end developers. I contributed heavily to the design of the website, and I built many of the components, including the article page. To ensure that our work was cohesive, we developed a design system using CSS custom properties, which also allowed us to easily create themes. To divide up responsibilities, we used a website called Trello that allowed us to assign tasks and see each other's progress. Our website is still a work in progress, and we will continue building on it and recruiting new generations of developers to update it.</template>
+          <template v-slot:overview>
+            <p>Tech Times is an open-source newspaper application built in Nuxt.js that allows students in our school to post articles and for other students to read them.</p>
+            <p>Until we developed Tech Times, our newspaper club had nowhere to publish its articles. Now, Tech Times will be used by our school's newspaper club and Journalism class.</p>
+            <p>I worked on the front-end and collaborated with both front-end and back-end developers. I contributed heavily to the design of the website, and I built many of the components as well as the article page.</p>
+            <p>To ensure that our work was cohesive, we developed a design system using CSS custom properties, which also allowed us to easily create fun themes. To divide up responsibilities, we used a website called Trello that allowed us to assign tasks and see each other's progress.</p>
+            <p>I and another developer also trained two new front-end developers on our workflow and codebase. We hope that the project will continue to live on with a new generation of developers!</p>
+            </template>
         </CaseStudy>
     </div>
 </template>
