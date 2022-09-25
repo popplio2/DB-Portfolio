@@ -1,4 +1,5 @@
 <template>
+  <ThemeButton />
    <div class="global-container">
         <header class="header">
             <h1>
@@ -25,12 +26,14 @@
     
 <script>
 import EmailButton from './EmailButton.vue'
+import ThemeButton from './ThemeButton.vue'
 
 import Footer from './Footer.vue'
 export default {
     components: {
         Footer,
-        EmailButton
+        EmailButton,
+        ThemeButton
     }
 }
 </script>

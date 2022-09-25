@@ -16,11 +16,32 @@
     --accent-color: #00d9ff;
     --white: #fff;
     --black: #000;
+    --bg-color: var(--white); 
+    --text-color: var(--black);
+    --button-bg: var(--white);
+    --button-text: var(--main-color);
+    --button-border: var(--main-color);
+
     --box-shadow: 0 .3rem .75rem rgba(0, 142, 185, 0.2);
     --h1: 7rem;
     --h2: 5rem;
     --h3: 3rem;
     --p: 1.7rem;
+  }
+  :root[theme="light"] {
+    --bg-color: var(--white); 
+    --text-color: var(--black);
+    --button-bg: var(--white);
+    --button-text: var(--main-color);
+    --button-border: var(--main-color);
+  }
+  :root[theme="dark"] {
+    --bg-color: var(--dark-bg); 
+    --text-color: var(--white);
+    --dark-bg: #00142a;
+    --button-bg: unset;
+    --button-text: var(--text-color);
+    --button-border: var(--text-color);
   }
   *, html, body {
     font-size: 62.5%;
@@ -31,6 +52,10 @@
   * {
     font-family: 'Montserrat', sans-serif;
   }
+  body {
+    background: var(--bg-color);
+  }
+
   .global-container {
     padding: 0 5%;
   }
@@ -39,14 +64,20 @@
   }
   h2 {
     font-size: var(--h2);
+    color: var(--white);
   }
   h3 {
     font-size: var(--h3);
+    color: var(--text-color);
   }
-  p, b {
+  p, b, li {
     font-size: var(--p);
+    color: var(--text-color);
     margin-top: 1rem;
     line-height: 1.5;
+  }
+  button, strong, b {
+    letter-spacing: .05rem;
   }
 .slidefade-enter-active,
 .slidefade-leave-active  {

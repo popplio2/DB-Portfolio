@@ -6,17 +6,17 @@
 
 <style scoped>
   .email-btn {
+    z-index: 1;
     position: fixed;
     bottom: 0;
     right: 0;
     font-size: 2rem;
     background-color: var(--main-color);
-    border: .15rem solid var(--white);
+    border: .15rem solid var(--bg-color);
     border-radius: 10rem;
     box-shadow: var(--box-shadow);
     padding: 1.5rem;
     margin: 3%;
-    z-index: 1;
-    color: var(--white);
+    color: var(--bg-color);
   }
 </style>

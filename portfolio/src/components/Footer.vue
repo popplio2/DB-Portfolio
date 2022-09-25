@@ -35,7 +35,7 @@ export default {
     display: flex;
     flex-direction: column;
     background-color: var(--main-color);
-    color: var(--white);
+    color: var(--bg-color);
     padding-bottom: 8rem;
     margin-top: -.5rem;
   }

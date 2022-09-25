@@ -10,12 +10,12 @@ export default {
 
 <style scoped>
   button {
-    color: var(--main-color);
+    color: var(--button-text);
     font-size: 1.6rem;
     font-weight: 700;
     padding: 1rem 2rem;
-    background-color: var(--white);
-    border: .15rem solid var(--main-color);
+    background-color: var(--button-bg);
+    border: .15rem solid var(--button-border);
     border-radius: .5rem;
     transition: all .3s;
     cursor: pointer;

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <ThemeButton />
     <HalfNav />
     <h2>My Projects</h2>
     <div class="projects-container global-container">
@@ -21,10 +22,18 @@ import ProjectCard from '@/components/ProjectCard.vue';
 import HalfNav from '@/components/HalfNav.vue';
 import Footer from '@/components/Footer.vue';
 import EmailButton from '@/components/EmailButton.vue';
+import ThemeButton from '@/components/ThemeButton.vue';
 
 export default {
   mounted() {
     window.scrollTo(0, 0);
+  },
+  components: {
+    ProjectCard,
+    HalfNav,
+    Footer,
+    EmailButton,
+    ThemeButton
   },
   data() {
     return {
@@ -73,12 +82,6 @@ export default {
         },
       ]
     }
-  },
-  components: {
-    ProjectCard,
-    HalfNav,
-    Footer,
-    EmailButton
   }
 }
 </script>

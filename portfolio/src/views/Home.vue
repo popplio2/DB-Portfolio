@@ -1,12 +1,12 @@
 <template>
   <div>
+    <ThemeButton />
     <section class="landing global-container">
       <div class="title-container">
         <h1>👋 I'm Daniel Briskman</h1>
         <div class="subtitle">
           <p>I ideate. I iterate. <strong>I create.</strong></p>
         </div>
-
         <div class="img-and-btn">
           <router-link class="home-link" to="/projects">
             <Button>See my projects ➤</Button>
@@ -89,13 +89,15 @@
 import Button from '@/components/Button.vue';
 import Footer from '@/components/Footer.vue';
 import EmailButton from '@/components/EmailButton.vue';
+import ThemeButton from '@/components/ThemeButton.vue';
 
 export default {
   components: {
     Button,
     Footer,
-    EmailButton
-  }
+    EmailButton,
+    ThemeButton
+  },
 }
 </script>
 
@@ -152,12 +154,12 @@ export default {
       }
     }
   .about {
-    color: var(--white);
     text-align: center;
     background-color: var(--main-color);
     margin-top: -.5rem;
   }
-  .about p {
+  .about p, .about b {
+    color: var(--white);
     margin-top: 2rem;
     text-align: left;
     line-height: 1.7;
@@ -254,7 +256,7 @@ export default {
     clip-path: ellipse(50% 30% at 50% 0%);
   }
   .clip-inverted {
-    background-color: var(--white);
+    background-color: var(--bg-color);
     z-index: 1;
     margin-bottom: -10rem;
   }
