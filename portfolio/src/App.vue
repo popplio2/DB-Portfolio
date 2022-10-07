@@ -39,7 +39,7 @@
     --bg-color: var(--dark-bg); 
     --text-color: var(--white);
     --dark-bg: #00142a;
-    --button-bg: unset;
+    --button-bg: var(--bg-color);
     --button-text: var(--text-color);
     --button-border: var(--text-color);
   }

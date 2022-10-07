@@ -4,19 +4,29 @@
 
 <script>
 export default {
+  props: {
+    theme: String,
+  },
   data() {
     return {
-      currentTheme: 'light',
+      currentTheme: '',
+    }
+  },
+  mounted() {
+    if(this.theme) {
+      this.currentTheme = this.theme;
+    } else {
+      this.currentTheme = 'light';
     }
   },
   methods: {
     toTheme() {
       if (this.currentTheme === 'light') {
       document.documentElement.setAttribute('theme', 'dark');
-      this.currentTheme = 'dark';
+      this.currentTheme = document.documentElement.getAttribute('theme');
       } else {
         document.documentElement.setAttribute('theme', 'light');
-        this.currentTheme = 'light';
+        this.currentTheme = document.documentElement.getAttribute('theme');
       }
     },
   }

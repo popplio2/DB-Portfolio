@@ -1,11 +1,11 @@
 <template>
   <div>
-    <ThemeButton />
+    <ThemeButton :theme="pageTheme"/>
     <section class="landing global-container">
       <div class="title-container">
         <h1>👋 I'm Daniel Briskman</h1>
         <div class="subtitle">
-          <p>I ideate. I iterate. <strong>I create.</strong></p>
+          <p>Designer, developer, <strong>creator.</strong></p>
         </div>
         <div class="img-and-btn">
           <router-link class="home-link" to="/projects">
@@ -98,6 +98,11 @@ export default {
     EmailButton,
     ThemeButton
   },
+  data() {
+    return {
+      pageTheme: document.documentElement.getAttribute('theme'),
+    }
+  }
 }
 </script>
 

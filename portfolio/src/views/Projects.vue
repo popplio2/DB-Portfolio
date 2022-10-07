@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ThemeButton />
+    <ThemeButton :theme="pageTheme"/>
     <HalfNav />
     <h2>My Projects</h2>
     <div class="projects-container global-container">
@@ -37,6 +37,7 @@ export default {
   },
   data() {
     return {
+      pageTheme: document.documentElement.getAttribute('theme'),
       projects: [
         {
           title: 'Riddler on the Roof',

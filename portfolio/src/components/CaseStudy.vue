@@ -1,5 +1,5 @@
 <template>
-  <ThemeButton />
+  <ThemeButton :theme="pageTheme"/>
    <div class="global-container">
         <header class="header">
             <h1>
@@ -30,11 +30,16 @@ import ThemeButton from './ThemeButton.vue'
 
 import Footer from './Footer.vue'
 export default {
-    components: {
-        Footer,
-        EmailButton,
-        ThemeButton
+  components: {
+      Footer,
+      EmailButton,
+      ThemeButton
+  },
+  data() {
+    return {
+      pageTheme: document.documentElement.getAttribute('theme'),
     }
+  }
 }
 </script>
 
