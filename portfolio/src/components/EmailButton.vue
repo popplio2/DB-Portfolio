@@ -11,12 +11,12 @@
     bottom: 0;
     right: 0;
     font-size: 2rem;
-    background-color: var(--main-color);
-    border: .15rem solid var(--bg-color);
+    background-color: var(--email-btn-bg);
+    border: .15rem solid var(--email-btn-text);
     border-radius: 10rem;
     box-shadow: var(--box-shadow);
     padding: 1.5rem;
     margin: 3%;
-    color: var(--bg-color);
+    color: var(--email-btn-text);
   }
 </style>

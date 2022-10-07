@@ -21,6 +21,8 @@
     --button-bg: var(--white);
     --button-text: var(--main-color);
     --button-border: var(--main-color);
+    --email-btn-bg: var(--white);
+    --email-btn-text: var(--main-color);
 
     --box-shadow: 0 .3rem .75rem rgba(0, 142, 185, 0.2);
     --h1: 7rem;
@@ -34,6 +36,8 @@
     --button-bg: var(--white);
     --button-text: var(--main-color);
     --button-border: var(--main-color);
+    --email-btn-bg: var(--white);
+    --email-btn-text: var(--main-color);
   }
   :root[theme="dark"] {
     --bg-color: var(--dark-bg); 
@@ -42,6 +46,8 @@
     --button-bg: var(--bg-color);
     --button-text: var(--text-color);
     --button-border: var(--text-color);
+    --email-btn-bg: var(--bg-color);
+    --email-btn-text: var(--white);
   }
   *, html, body {
     font-size: 62.5%;
