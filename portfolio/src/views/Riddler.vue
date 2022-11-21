@@ -15,6 +15,9 @@
             </a>
           </template>
           <template v-slot:info>
+            <p><b>Role:</b>
+                Team Captain, Full-Stack Developer 
+              </p>
              <p><b>Team Size:</b>
                 5 
               </p>
@@ -25,7 +28,7 @@
                 Vue 3, Vuex, Auth0, MongoDB
               </p> 
           </template>
-          <template v-slot:overview>Add stuff here</template>
+          <template v-slot:overview>Full description coming soon! In short, Riddler on the Roof is an RPG I created in a team of 5. I worked on much of the frontend development, as well as integrating each member's contributions. I also worked on the backend and connecting to the database. Lastly, I helped with the story and game design as well. It's not perfect, but I am very proud of it, so please enjoy!</template>
         </CaseStudy>
     </div>
 </template>
