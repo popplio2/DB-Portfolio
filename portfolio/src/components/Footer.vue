@@ -7,7 +7,7 @@
       <h2>Let's get in touch!</h2>
       <a href="mailto:briskmandaniel@gmail.com">
         <font-awesome-icon icon="envelope"/>
-        briskmandaniel@gmail.com
+        daniel.briskman@stonybrook.edu
       </a>
       <a href="sms:+13475333119&body=Hello%20there!%20I%20saw%20your%20portfolio%20and...">
         <font-awesome-icon icon="comment-dots"/>

@@ -1,5 +1,5 @@
 <template>
-  <button class="theme-btn" @click="toTheme()">{{ currentTheme }}</button>
+  <button class="theme-btn" @click="toTheme()"><font-awesome-icon :icon="currentTheme"/></button>
 </template>
 
 <script>
@@ -16,16 +16,16 @@ export default {
     if(this.theme) {
       this.currentTheme = this.theme;
     } else {
-      this.currentTheme = 'light';
+      this.currentTheme = 'sun';
     }
   },
   methods: {
     toTheme() {
-      if (this.currentTheme === 'light') {
-      document.documentElement.setAttribute('theme', 'dark');
+      if (this.currentTheme === 'sun') {
+      document.documentElement.setAttribute('theme', 'moon');
       this.currentTheme = document.documentElement.getAttribute('theme');
       } else {
-        document.documentElement.setAttribute('theme', 'light');
+        document.documentElement.setAttribute('theme', 'sun');
         this.currentTheme = document.documentElement.getAttribute('theme');
       }
     },
@@ -41,12 +41,12 @@ export default {
     right: 0;
     margin: 3%;
     color: var(--button-text);
-    font-size: 1.4rem;
+    font-size: 1.9rem;
     font-weight: 700;
-    padding: .75rem 1.5rem;
+    padding: 1rem;
     background-color: var(--button-bg);
     border: .15rem solid var(--button-border);
-    border-radius: 2rem;
+    border-radius: 10rem;
     transition: all .3s;
     cursor: pointer;
   }

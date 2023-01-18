@@ -30,7 +30,8 @@
     --h3: 3rem;
     --p: 1.7rem;
   }
-  :root[theme="light"] {
+  /* the theme names are linked to the icon names */
+  :root[theme="sun"] {
     --bg-color: var(--white); 
     --text-color: var(--black);
     --button-bg: var(--white);
@@ -39,7 +40,7 @@
     --email-btn-bg: var(--white);
     --email-btn-text: var(--main-color);
   }
-  :root[theme="dark"] {
+  :root[theme="moon"] {
     --bg-color: var(--dark-bg); 
     --text-color: var(--white);
     --dark-bg: #00142a;
