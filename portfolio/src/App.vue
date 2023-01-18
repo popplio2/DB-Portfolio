@@ -85,6 +85,9 @@
   button, strong, b {
     letter-spacing: .05rem;
   }
+  button {
+    margin-bottom: 1rem;
+  }
 .slidefade-enter-active,
 .slidefade-leave-active  {
   transition: all 0.3s ease;

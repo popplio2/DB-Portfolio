@@ -7,6 +7,10 @@
             <img src="../assets/riddler.png" alt="">
           </template>
           <template v-slot:buttons>
+            <a href="https://riddler-game.netlify.app" target="blank">
+              <Button>See the website ➤</Button>
+            </a>
+            <p></p>
             <a href="https://github.com/popplio2/fullstack-frontend-gitfactor-the-front-end" target="blank">
               <Button>Read the frontend code ➤</Button>
             </a>

@@ -63,16 +63,16 @@
           <h3>Strengths</h3>
           <ul>
             <li>
+              <font-awesome-icon icon="mountain" />
+              Motivated
+            </li>
+            <li>
               <font-awesome-icon icon="tasks" /> 
-              Goal-oriented
+              Goal-Oriented
             </li>
             <li>
               <font-awesome-icon icon="user-friends" /> 
               Team Player
-            </li>
-            <li>
-              <font-awesome-icon icon="mountain" /> 
-              Motivated
             </li>
           </ul>
         </div>

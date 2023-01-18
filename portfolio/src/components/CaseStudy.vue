@@ -58,7 +58,7 @@ export default {
     margin: 2rem 0;
   }
   .article h2 {
-      margin-top: 2rem;
+    margin-top: 2rem;
   }
 
 @media only screen and (min-width: 1200px) {
@@ -82,5 +82,8 @@ export default {
     box-shadow: 0 0 .5rem var(--accent-color);
     border-radius: 1rem;
     transition: all .3s;
+  }
+  .article p {
+    margin-top: 2rem;
   }
 </style>
