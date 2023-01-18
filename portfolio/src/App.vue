@@ -49,6 +49,7 @@
     --button-border: var(--text-color);
     --email-btn-bg: var(--bg-color);
     --email-btn-text: var(--white);
+    --box-shadow: 0 .3rem .75rem rgba(0, 54, 67, 0.2);
   }
   *, html, body {
     font-size: 62.5%;
