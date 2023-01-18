@@ -15,7 +15,7 @@
     border: .15rem solid var(--email-btn-text);
     border-radius: 10rem;
     box-shadow: var(--box-shadow);
-    padding: 1.5rem;
+    padding: 1.25rem 1.5rem;
     margin: 3%;
     color: var(--email-btn-text);
   }
