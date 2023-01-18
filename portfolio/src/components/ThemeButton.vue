@@ -47,11 +47,8 @@ export default {
     background-color: var(--button-bg);
     border: .15rem solid var(--button-border);
     border-radius: 10rem;
+    box-shadow: var(--box-shadow);
     transition: all .3s;
     cursor: pointer;
-  }
-  button:hover {
-    transform: translateY(-.5rem);
-    box-shadow: var(--box-shadow);
   }
 </style>
