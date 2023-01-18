@@ -11,6 +11,7 @@
           <router-link class="home-link" to="/projects">
             <Button>See my projects ➤</Button>
           </router-link>
+        <!-- make memoji image 323 x 354 and use https://www.aconvert.com/image/png-to-svg/ to update the memoji when necessary-->
           <img src="../assets/memoji.svg" alt="a memoji of Daniel Briskman working on his laptop">
         </div>
 
