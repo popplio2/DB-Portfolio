@@ -28,6 +28,7 @@ export default {
     border-right: .1rem solid var(--button-border);
     border-bottom-left-radius: 5rem;
     border-bottom-right-radius: 5rem;
+    transition: all .3s;
   }
   .nav li {
     display: inline-block;
