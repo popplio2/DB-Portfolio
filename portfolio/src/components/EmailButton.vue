@@ -18,5 +18,6 @@
     padding: 1.25rem 1.5rem;
     margin: 3%;
     color: var(--email-btn-text);
+    transition: all .3s;
   }
 </style>
