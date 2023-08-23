@@ -25,7 +25,9 @@
                 HTML, SCSS, JavaScript, Figma
               </p> 
           </template>
-          <template v-slot:overview>For my first major project in my junior-year computer science class, I partnered up with a classmate to create a website that advertised a country—or in our case, a fictional kingdom. The website leverages CSS responsive design principles to display different versions of sections depending on the device that the user is viewing the website on. The website also makes full use of CSS hover effects to create an interactive user experience. I was mainly responsible for the home, attractions, and wildlife sections, as well as the nav and the footer. Before coding the site, my partner and I designed high-fidelity wireframes in Figma.</template>
+          <template v-slot:overview>
+            <p>For my first major project in my junior-year computer science class, I partnered up with a classmate to create a website that advertised a country—or in our case, a fictional kingdom. The website leverages CSS responsive design principles to display different versions of sections depending on the device that the user is viewing the website on. The website also makes full use of CSS hover effects to create an interactive user experience. I was mainly responsible for the home, attractions, and wildlife sections, as well as the nav and the footer. Before coding the site, my partner and I designed high-fidelity wireframes in Figma.</p>
+          </template>
         </CaseStudy>
     </div>
 </template>

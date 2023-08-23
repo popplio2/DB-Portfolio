@@ -26,9 +26,10 @@
     <div class="clip clip-inverted"></div>
     <section class="about global-container">
       <h2>About Me</h2>
-      <p><b>Hello, world!</b> I'm Daniel Briskman, an 18 year-old web developer who emphasizes efficient code and pleasant user experiences.</p>
-      <p>My interest in programming stems from an interest in User Experience Design (UX Design), which I took online courses to learn about. I also taught myself how to use Figma to design wireframes and prototypes.</p>
-      <p>My knowledge of UX served me well when I took computer science classes in high school, and I found computer science an even better fit for me. I've worked on mostly front-end projects so far, but I also led a Full-Stack project called "Riddler on the Roof" in my AP Computer Science Principles class. I'm in college now, and I'm currently pursuing a B.S. in Computer Science at Stony Brook University!</p>
+      <p><b>Hello, world!</b> I'm Daniel Briskman, an 18 year-old web developer studying computer science at Stony Brook University.</p>
+      <p>My introduction into programming stemmed from an interest in UX Design, which I learned about during the Covid lockdowns as I was researching careers. The combination of creativity, analysis, and attention to detail felt like a great fit for me, so I took some online courses and learned how to use Figma to design wireframes and prototypes.</p>
+      <p>I also started taking computer science classes in high school to see if I'd like it—and I did. I've worked on mostly front-end projects so far, but I also led a Full-Stack project called "Riddler on the Roof" in my AP Computer Science Principles class.</p>
+      <p>Currently, I'm working on a full-stack personal project in Vue and Django. Hopefully, I'll be able to add it on here soon!</p>
     </section>
     <div class="clip"></div>
 

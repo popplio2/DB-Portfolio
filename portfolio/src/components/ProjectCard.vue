@@ -34,14 +34,6 @@ export default {
     article:hover {
         border: .2rem solid var(--accent-color);
     }
-    a{
-        text-decoration: none;
-        color: black;
-        }
-    a:visited{
-        text-decoration: none;
-        color: black;
-    }
     article div {
         width: 50%;
     }

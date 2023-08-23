@@ -90,6 +90,20 @@
   button {
     margin-bottom: 1rem;
   }
+  a {
+    font-style: bold;
+    font-size: var(--p);
+    text-decoration: none;
+    color: var(--main-color);
+    transition: .2s all;
+  }
+  a:visited{
+    color: var(--main-color);
+    text-decoration: none;
+  }
+  a:hover {
+    color: var(--accent-color);
+  }
 .slidefade-enter-active,
 .slidefade-leave-active  {
   transition: all 0.3s ease;

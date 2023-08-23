@@ -9,7 +9,7 @@
         <font-awesome-icon icon="envelope"/>
         daniel.briskman@stonybrook.edu
       </a>
-      <a href="sms:+13475333119&body=Hello%20there!%20I%20saw%20your%20portfolio%20and...">
+      <a href="sms:+13475333119&body=Hello%20there,%20Daniel!%20I%20saw%20your%20portfolio%20and...">
         <font-awesome-icon icon="comment-dots"/>
         347-533-3119
       </a>

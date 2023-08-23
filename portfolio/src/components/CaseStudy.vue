@@ -45,7 +45,7 @@ export default {
 
 <style scoped> 
   .header {
-      margin: 3rem 0;
+    margin: 3rem 0;
   }
   .header h1, h2{
     color: var(--main-color);
@@ -84,6 +84,6 @@ export default {
     transition: all .3s;
   }
   .article p {
-    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 </style>

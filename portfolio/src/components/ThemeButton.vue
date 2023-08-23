@@ -1,5 +1,5 @@
 <template>
-  <button class="theme-btn" @click="toTheme()"><font-awesome-icon :icon="currentTheme"/></button>
+  <button class="theme-btn" @click="toTheme()"><font-awesome-icon :icon="currentTheme" /></button>
 </template>
 
 <script>

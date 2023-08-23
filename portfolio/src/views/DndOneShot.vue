@@ -25,7 +25,9 @@
                 HTML, SCSS, JavaScript, Figma
               </p> 
           </template>
-          <template v-slot:overview>Aside from walking the user through the process of creating their own Dungeons and Dragons one-shot, the goal of this project was to fetch data from an API and display it to the user upon user action. We accomplished this in the Monsters section, which allows the user to search for monsters and see their information. Data from the API is also statically displayed in the Setting and Characters sections, allowing the user to form their one-shot based on authentic data from the DnD API.</template>
+          <template v-slot:overview>
+            <p>Aside from walking the user through the process of creating their own Dungeons and Dragons one-shot, the goal of this project was to fetch data from an API and display it to the user upon user action. We accomplished this in the Monsters section, which allows the user to search for monsters and see their information. Data from the API is also statically displayed in the Setting and Characters sections, allowing the user to form their one-shot based on authentic data from the DnD API.</p>
+          </template>
 
         </CaseStudy>
     </div>
