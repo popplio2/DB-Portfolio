@@ -26,24 +26,23 @@
       </template>
       <template v-slot:info>
         <p>
-          <b>Role:</b>
-          Team Captain, Full-Stack Developer
-        </p>
-        <p>
-          <b>Team Size:</b>
-          5
+          <b>Teammates:</b>
+          Lucy Kwan, Jake Li, Charley Baluja, Nika Imbamberdieva
         </p>
         <p>
           <b>Course:</b>
           AP Computer Science Principles
         </p>
         <p>
+          <b>Role:</b>
+          Team Captain, Full-Stack Developer
+        </p>
+        <p>
           <b>Tools:</b>
-          Vue 3, Vuex, Auth0, MongoDB + Express
+          Vue 3, Vuex, Auth0, MongoDB, Express.js
         </p>
       </template>
       <template v-slot:overview>
-        <!-- <p>Full description coming soon! In short, Riddler on the Roof is an RPG I created in a team of 5. I worked on much of the frontend development, as well as integrating each member's contributions. I also worked on the backend and connecting to the database. Lastly, I helped with the story and game design as well. It's not perfect, but I am very proud of it, so please enjoy!</p> -->
         <p>
           Riddler on the Roof is an RPG I worked on in a team of 5 for my AP
           Computer Science Principles class. I worked on much of the frontend
