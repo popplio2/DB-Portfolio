@@ -14,8 +14,13 @@
       <template v-slot:info>
         <p>
           <b>Teammates:</b>
-          N/A (Individual Personal Project)
+          N/A (Individual Project)
         </p>
+        <p>
+          <b>Course:</b>
+          N/A (Personal Project)
+        </p>
+        <p></p>
         <p>
           <b>Tools:</b>
           Vue.js

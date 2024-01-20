@@ -17,45 +17,51 @@ const routes = [
       import(/* webpackChunkName: "projects" */ "../views/Projects.vue"),
   },
   {
+    path: "/projects/secret-santa",
+    name: "Secret Santa Generator",
+    component: () =>
+      import(/* webpackChunkName: "project" */ "../views/SecretSanta.vue"),
+  },
+  {
     path: "/projects/riddler",
     name: "Riddler on the Roof",
-    component: () => 
+    component: () =>
       import(/* webpackChunkName: "project" */ "../views/Riddler.vue"),
   },
   {
     path: "/projects/portfolio",
     name: "Portfolio",
-    component: () => 
+    component: () =>
       import(/* webpackChunkName: "project" */ "../views/Portfolio.vue"),
   },
   {
     path: "/projects/scrappy-notes",
     name: "ScrappyNotes",
-    component: () => 
+    component: () =>
       import(/* webpackChunkName: "project" */ "../views/ScrappyNotes.vue"),
   },
   {
     path: "/projects/tech-times",
     name: "TechTimes",
-    component: () => 
+    component: () =>
       import(/* webpackChunkName: "project" */ "../views/TechTimes.vue"),
   },
   {
     path: "/projects/d&d-one-shot",
     name: "DndOneShot",
-    component: () => 
+    component: () =>
       import(/* webpackChunkName: "project" */ "../views/DndOneShot.vue"),
   },
   {
     path: "/projects/choose-your-own-adventure",
     name: "Adventure",
-    component: () => 
+    component: () =>
       import(/* webpackChunkName: "project" */ "../views/Adventure.vue"),
   },
   {
     path: "/projects/kingdom-of-galgudd",
     name: "Galgudd",
-    component: () => 
+    component: () =>
       import(/* webpackChunkName: "project" */ "../views/Galgudd.vue"),
   },
 ];
