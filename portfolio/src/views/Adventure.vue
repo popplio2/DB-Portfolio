@@ -4,7 +4,10 @@
     <CaseStudy>
       <template v-slot:title>Choose Your Own Adventure</template>
       <template v-slot:image>
-        <img src="../assets/adventure.png" alt="" />
+        <img
+          src="../assets/adventure.png"
+          alt="An image of an event in the game. It has a description of the event and four buttons describing the player's possible options."
+        />
       </template>
       <template v-slot:buttons>
         <a href="https://galguddadventure.netlify.app" target="blank">

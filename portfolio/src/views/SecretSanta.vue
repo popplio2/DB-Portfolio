@@ -4,7 +4,10 @@
     <CaseStudy>
       <template v-slot:title>Secret Santa Generator</template>
       <template v-slot:image>
-        <img src="../assets/santa.png" alt="" />
+        <img
+          src="../assets/santa.png"
+          alt="An image of the output of the program, listing who is whose secret santa."
+        />
       </template>
       <template v-slot:buttons>
         <a href="https://github.com/popplio2/SecretSantaProject" target="blank">

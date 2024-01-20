@@ -4,7 +4,10 @@
     <CaseStudy>
       <template v-slot:title>D&D One-Shot</template>
       <template v-slot:image>
-        <img src="../assets/dnd.png" alt="" />
+        <img
+          src="../assets/dnd.png"
+          alt="An image of the Monster's section of the website, where the user can search for monsters to add to their one-shot."
+        />
       </template>
       <template v-slot:buttons>
         <a href="https://dnd1shot.netlify.app" target="blank">

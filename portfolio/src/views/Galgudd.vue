@@ -4,7 +4,10 @@
     <CaseStudy>
       <template v-slot:title>Kingdom of Galgudd</template>
       <template v-slot:image>
-        <img src="../assets/galgudd.png" alt="" />
+        <img
+          src="../assets/galgudd.png"
+          alt="An image of the landing section of the website."
+        />
       </template>
       <template v-slot:buttons>
         <a href="https://galgudd.netlify.app" target="blank">
@@ -40,8 +43,8 @@
           depending on the device that the user is viewing the website on. The
           website also makes full use of CSS hover effects to create an
           interactive user experience. I was mainly responsible for the landing
-          page and footer, as well as the attractions and wildlife sections. I
-          also helped Charley with the hover effects in the history section.
+          section and footer, as well as the attractions and wildlife sections.
+          I also helped Charley with the hover effects in the history section.
           Before coding the site, we designed high-fidelity wireframes in Figma.
         </p>
       </template>

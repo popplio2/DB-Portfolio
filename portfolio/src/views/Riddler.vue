@@ -4,7 +4,10 @@
     <CaseStudy>
       <template v-slot:title>Riddler on the Roof</template>
       <template v-slot:image>
-        <img src="../assets/riddler.png" alt="" />
+        <img
+          src="../assets/riddler.png"
+          alt="An in-game image of the player on level 1. There are buttons for controls and a visual tracker for lives."
+        />
       </template>
       <template v-slot:buttons>
         <a href="https://riddler-game.netlify.app" target="blank">

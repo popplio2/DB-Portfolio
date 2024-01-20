@@ -4,7 +4,10 @@
     <CaseStudy>
       <template v-slot:title>My Portfolio</template>
       <template v-slot:image>
-        <img src="../assets/portfolio.png" alt="" />
+        <img
+          src="../assets/portfolio.png"
+          alt="An image of the Skills section of the website."
+        />
       </template>
       <template v-slot:buttons>
         <a href="https://github.com/popplio2/DB-Portfolio" target="blank">
