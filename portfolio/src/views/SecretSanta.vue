@@ -99,7 +99,7 @@
           santas and a set of only santees. These sets are mutually exclusive,
           and so we can pair them up with each other.
         </p>
-        <h3>Reflection & Next Steps</h3>
+        <h3>Reflection</h3>
         <p>
           That was a description of my final solution, but getting there was not
           easy! I often had to step back and reconsider how I was storing data,
