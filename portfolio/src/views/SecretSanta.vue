@@ -107,19 +107,16 @@
           (poor naming can cause a lot of confusion).
         </p>
         <p>
-          The algorithm for adding players was also difficult conceptually, and
+          The procedure for adding players was also difficult conceptually, and
           it required that I understood many edge cases. In fact, I did not
           expect to have to use set operations at all when I started this
           project!
         </p>
         <p>
-          I am proud of myself for being able to analyze an abstract problem
-          with more detail and consideration than I ever had in the past, and I
-          am continuing to work on this project and optimize my program.
-          Currently, I am working on creating a Player subclass to track certain
-          properties, which would allow me to make my program more
-          space-efficient by instantiating less sets to store santas, santees,
-          and all players separately.
+          All in all, I am proud of myself for being able to analyze an abstract problem
+          with more detail and consideration than I ever had in the past. I
+          hope to be able to come back to this project once I'm further along in my 
+          education and be able to see even more ways to optimize it.
         </p>
       </template>
     </CaseStudy>

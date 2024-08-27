@@ -5,7 +5,7 @@
       <div class="title-container">
         <h1>👋 I'm Daniel Briskman</h1>
         <div class="subtitle">
-          <p>Designer, developer, <strong>creator.</strong></p>
+          <p>Developer, designer, <strong>creator.</strong></p>
         </div>
         <div class="img-and-btn">
           <router-link class="home-link" to="/projects">
