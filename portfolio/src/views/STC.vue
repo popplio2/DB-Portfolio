@@ -29,6 +29,7 @@
           For summer 2024, I was accepted to the Global Mitigation Project's
           <a
             href="https://www.globalwarmingmitigationproject.org/constellations"
+            target="_blank"
             >Constellations Fellowship </a
           >, under which I completed a Web Developer Internship at
           SubjectToClimate. My main contribution was creating the Climate Change

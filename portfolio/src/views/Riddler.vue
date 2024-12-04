@@ -87,7 +87,9 @@
           At this point, we were about to start actually writing code. But
           first, I needed everyone to be on the same page regarding our Git
           workflow. Charley Baluja, another member of my team, worked on the
-          <router-link to="/projects/tech-times">Tech Times</router-link>
+          <router-link to="/projects/tech-times" target="_blank"
+            >Tech Times</router-link
+          >
           project with me, and over the course of that project we ran into many
           problems with accidentally erasing each other's work when we merged
           branches, and we couldn't have that happening here. So Charley and I
