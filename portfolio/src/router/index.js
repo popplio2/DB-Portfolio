@@ -17,6 +17,18 @@ const routes = [
       import(/* webpackChunkName: "projects" */ "../views/Projects.vue"),
   },
   {
+    path: "/projects/technical-communications",
+    name: "Technical Communications",
+    component: () =>
+      import(/* webpackChunkName: "project" */ "../views/TechComm.vue"),
+  },
+  {
+    path: "/projects/STC",
+    name: "SubjectToCLimate Internship",
+    component: () =>
+      import(/* webpackChunkName: "project" */ "../views/STC.vue"),
+  },
+  {
     path: "/projects/secret-santa",
     name: "Secret Santa Generator",
     component: () =>

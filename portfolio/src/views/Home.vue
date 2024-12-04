@@ -8,9 +8,22 @@
           <p>Developer, designer, <strong>creator.</strong></p>
         </div>
         <div class="img-and-btn">
-          <router-link class="home-link" to="/projects">
-            <Button>See my projects ➤</Button>
-          </router-link>
+          <div class="home-link" to="/projects">
+            <router-link class="home-link" to="/projects">
+              <PrimaryButton style="margin-right: 1.5rem"
+                >See my projects ➤</PrimaryButton
+              >
+            </router-link>
+            <a
+              href="https://drive.google.com/file/d/1CiDOsuPQw_q0QYBClYK4cJ4IvhubG6GR/view?usp=sharing"
+              target="_blank"
+            >
+              <Button
+                >View Resume
+                <font-awesome-icon icon="file-pdf" />
+              </Button>
+            </a>
+          </div>
           <!-- make memoji image 323 x 354 and use https://www.aconvert.com/image/png-to-svg/ to update the memoji when necessary-->
           <img
             src="../assets/memoji.svg"
@@ -32,27 +45,34 @@
     <div class="clip clip-inverted"></div>
     <section class="about global-container">
       <h2>About Me</h2>
-      <p>
-        <b>Hello, world!</b> I'm Daniel Briskman, a software developer studying
-        computer science at Stony Brook University.
-      </p>
-      <p>
-        My introduction into programming stemmed from an interest in UX Design,
-        which I learned about during the Covid lockdowns as I was researching
-        careers. The combination of creativity, analysis, and attention to
-        detail felt like a great fit for me, so I took some online courses and
-        learned how to use Figma to design wireframes and prototypes.
-      </p>
-      <p>
-        From there, I started taking computer science classes in high school to
-        see if I'd like it—and I did. I've worked on mostly front-end projects
-        so far, but I also led a full-stack project called "Riddler on the Roof"
-        in my AP Computer Science Principles class.
-      </p>
-      <p>
-        Currently, I'm working on a full-stack personal project in Vue and
-        Django. Hopefully, I'll be able to add it on here soon!
-      </p>
+      <div class="about-content">
+        <div class="about-txt">
+          <p>
+            <b>Hello, world!</b> I'm Daniel Briskman, a software developer
+            studying computer science at Stony Brook University.
+          </p>
+          <p>
+            My introduction into programming stemmed from an interest in UX
+            Design, which I learned about during the Covid lockdowns as I was
+            researching careers. The combination of creativity, analysis, and
+            attention to detail felt like a great fit for me, so I took some
+            online courses and learned how to use Figma to design wireframes and
+            prototypes.
+          </p>
+          <p>
+            From there, I started taking computer science classes in high school
+            and found that programming was something I could pour a lot of time
+            and creativity into, and it was very rewarding. I've had multiple
+            work experiences in frontend development since then.
+          </p>
+          <p>
+            My current academic interests are human-computer interaction,
+            software development, cybersecurity, and project management.
+          </p>
+        </div>
+
+        <img src="../assets/me.jpeg" class="about-img" />
+      </div>
     </section>
     <div class="clip"></div>
 
@@ -84,11 +104,15 @@
             </li>
             <li>
               <font-awesome-icon icon="database" />
-              MongoDB and Express
+              Express.js, MongoDB
             </li>
             <li>
               <font-awesome-icon icon="pen-nib" />
               Figma (UI design)
+            </li>
+            <li>
+              <font-awesome-icon icon="file-code" />
+              Java, C, C#
             </li>
           </ul>
         </div>
@@ -97,11 +121,11 @@
           <ul>
             <li>
               <font-awesome-icon icon="mountain" />
-              Motivated
+              Goal-Oriented
             </li>
             <li>
               <font-awesome-icon icon="tasks" />
-              Goal-Oriented
+              Organized
             </li>
             <li>
               <font-awesome-icon icon="user-friends" />
@@ -123,6 +147,7 @@ import Button from "@/components/Button.vue";
 import Footer from "@/components/Footer.vue";
 import EmailButton from "@/components/EmailButton.vue";
 import ThemeButton from "@/components/ThemeButton.vue";
+import PrimaryButton from "@/components/PrimaryButton.vue";
 
 export default {
   components: {
@@ -130,6 +155,7 @@ export default {
     Footer,
     EmailButton,
     ThemeButton,
+    PrimaryButton,
   },
   data() {
     return {
@@ -161,6 +187,9 @@ h2 {
   display: flex;
   justify-content: center;
   margin-bottom: 5rem;
+}
+.subtitle p {
+  border-bottom: 0.35rem dotted var(--accent-color);
 }
 .inverted {
   margin-top: 0;
@@ -196,6 +225,17 @@ h2 {
   background-color: var(--main-color);
   margin-top: -0.5rem;
 }
+.about-content {
+  display: flex;
+  flex-direction: row;
+}
+.about-img {
+  height: 35rem;
+  border-radius: 3rem;
+  box-shadow: var(--box-shadow);
+  margin: 2.5rem;
+  margin-left: 5rem;
+}
 .about p,
 .about b {
   color: var(--white);
@@ -223,11 +263,7 @@ h2 {
   margin: 1.5rem;
   border-radius: 3rem;
   height: fit-content;
-  transition: all 0.3s;
-}
-.skills-table:hover {
   box-shadow: var(--box-shadow);
-  transform: translateY(-0.5rem);
 }
 .skills-table h3 {
   display: inline-block;

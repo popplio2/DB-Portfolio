@@ -45,6 +45,20 @@ export default {
       pageTheme: document.documentElement.getAttribute("theme"),
       projects: [
         {
+          title: "Technical Communications",
+          path: "technical-communications",
+          image: require("../assets/techcomm.png"),
+          description:
+            "Collection of projects I completed demonstrating effective technical writing and communication.",
+        },
+        {
+          title: "SubjectToClimate Internship",
+          path: "STC",
+          image: require("../assets/stc.png"),
+          description:
+            "My summer of 2024 Web Developer Internship at SubjectToClimate, a climate education startup.",
+        },
+        {
           title: "Secret Santa Generator",
           path: "secret-santa",
           image: require("../assets/santa.png"),

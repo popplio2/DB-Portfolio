@@ -20,6 +20,8 @@
   --button-bg: var(--white);
   --button-text: var(--main-color);
   --button-border: var(--main-color);
+  --primary-button-bg: var(--main-color);
+  --primary-button-text: var(--white);
   --email-btn-bg: var(--white);
   --email-btn-text: var(--main-color);
 
