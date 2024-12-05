@@ -18,6 +18,7 @@ import {
   faMoon,
   faFilePdf,
   faFileCode,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 library.add(
   faCode,
@@ -33,7 +34,8 @@ library.add(
   faSun,
   faMoon,
   faFilePdf,
-  faFileCode
+  faFileCode,
+  faUser
 );
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
