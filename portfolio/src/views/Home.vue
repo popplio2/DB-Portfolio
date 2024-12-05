@@ -49,7 +49,10 @@
         <div class="about-txt">
           <p>
             <b>Hello, world!</b> I'm Daniel Briskman, a software developer
-            studying computer science at Stony Brook University.
+            studying computer science at
+            <a href="https://www.stonybrook.edu/" target="_blank"
+              >Stony Brook University</a
+            >.
           </p>
           <p>
             My introduction into programming stemmed from an interest in UX
