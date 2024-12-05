@@ -230,7 +230,8 @@ h2 {
   flex-direction: row;
 }
 .about-img {
-  height: 35rem;
+  max-width: 30rem;
+  object-fit: cover;
   border-radius: 3rem;
   box-shadow: var(--box-shadow);
   margin: 2.5rem;
@@ -307,7 +308,16 @@ h2 {
     margin-top: 0;
     margin-bottom: 3rem;
   }
+  .about-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .about-img {
+    margin: 0;
+    max-width: 20rem;
+  }
 }
+
 @media only screen and (max-width: 600px) {
   .subtitle {
     margin-bottom: 3rem;
