@@ -15,20 +15,21 @@
         </a>
       </template>
       <template v-slot:info>
-        <p>
+        <!-- <p>
           <b>Teammates:</b>
           N/A (Individual Project)
         </p>
         <p>
           <b>Course:</b>
           N/A (Personal Project)
-        </p>
+        </p> -->
         <p>
           <b>Tools:</b>
           Java
         </p>
       </template>
       <template v-slot:overview>
+        <h3>Overview</h3>
         <p>
           Every year my friend group uses a website to organize a secret santa.
           With these things, you often invite more people than you initially
@@ -113,10 +114,11 @@
           project!
         </p>
         <p>
-          All in all, I am proud of myself for being able to analyze an abstract problem
-          with more detail and consideration than I ever had in the past. I
-          hope to be able to come back to this project once I'm further along in my 
-          education and be able to see even more ways to optimize it.
+          All in all, I am proud of myself for being able to analyze an abstract
+          problem with more detail and consideration than I ever had in the
+          past. I hope to be able to come back to this project once I'm further
+          along in my education and be able to see even more ways to optimize
+          it.
         </p>
       </template>
     </CaseStudy>
