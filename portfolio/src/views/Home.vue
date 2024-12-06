@@ -247,6 +247,13 @@ h2 {
   text-align: left;
   line-height: 1.7;
 }
+.about a {
+  color: var(--bg-color);
+  font-weight: 500;
+}
+.about a:hover {
+  color: var(--accent-color);
+}
 .skills {
   margin: -8rem 0;
 }
