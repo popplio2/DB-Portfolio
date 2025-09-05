@@ -19,6 +19,10 @@ import {
   faFilePdf,
   faFileCode,
   faUser,
+  faBolt,
+  faMusic,
+  faTableTennis,
+  faHeadphones,
 } from "@fortawesome/free-solid-svg-icons";
 library.add(
   faCode,
@@ -35,7 +39,11 @@ library.add(
   faMoon,
   faFilePdf,
   faFileCode,
-  faUser
+  faUser,
+  faBolt,
+  faMusic,
+  faTableTennis,
+  faHeadphones
 );
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 

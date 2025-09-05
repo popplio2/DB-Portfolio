@@ -45,6 +45,13 @@ export default {
       pageTheme: document.documentElement.getAttribute("theme"),
       projects: [
         {
+          title: "Broadridge Internship",
+          path: "broadridge-internship",
+          image: require("../assets/broadridge.jpeg"),
+          description:
+            "My summer of 2025 Software Engineering Internship on the Global Engineering team at Broadridge.",
+        },
+        {
           title: "Technical Communications",
           path: "technical-communications",
           image: require("../assets/techcomm.png"),

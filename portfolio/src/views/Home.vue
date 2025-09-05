@@ -3,11 +3,11 @@
     <ThemeButton :theme="pageTheme" />
     <section class="landing global-container">
       <div class="title-container">
-        <h1>👋 I'm Daniel Briskman</h1>
+        <h1>Daniel Briskman</h1>
         <div class="subtitle">
-          <p>Developer, designer, <strong>creator.</strong></p>
+          <p>User-Motivated Software Engineer studying @ SBU</p>
         </div>
-        <div class="img-and-btn">
+        <div class="landing-buttons">
           <div class="home-link" to="/projects">
             <router-link class="home-link" to="/projects">
               <PrimaryButton style="margin-right: 1.5rem"
@@ -15,7 +15,7 @@
               >
             </router-link>
             <a
-              href="https://drive.google.com/file/d/1CiDOsuPQw_q0QYBClYK4cJ4IvhubG6GR/view?usp=sharing"
+              href="https://docs.google.com/document/d/1HbEabykrmg2i3BmL0m58yOMaJcRhL4pbxYGrifzKexg/edit?usp=sharing"
               target="_blank"
             >
               <Button
@@ -25,13 +25,11 @@
             </a>
           </div>
           <!-- make memoji image 323 x 354 and use https://www.aconvert.com/image/png-to-svg/ to update the memoji when necessary-->
-          <img
-            src="../assets/memoji.svg"
-            alt="a memoji of Daniel Briskman working on his laptop"
-          />
         </div>
-
         <EmailButton />
+      </div>
+      <div class="img-container">
+        <img class="landing-img" src="../assets/photoshoot.jpeg" />
       </div>
     </section>
 
@@ -48,33 +46,33 @@
       <div class="about-content">
         <div class="about-txt">
           <p>
-            <b>Hello, world!</b> I'm Daniel Briskman, a software developer
-            studying computer science at
+            <b>Hello, world!</b> I'm Daniel Briskman, an honors computer science
+            student at
             <a href="https://www.stonybrook.edu/" target="_blank"
               >Stony Brook University</a
             >.
           </p>
           <p>
-            My introduction into programming stemmed from an interest in UX
-            Design, which I learned about during the Covid lockdowns as I was
-            researching careers. The combination of creativity, analysis, and
-            attention to detail felt like a great fit for me, so I took some
-            online courses and learned how to use Figma to design wireframes and
-            prototypes.
+            I first got into tech during the Covid lockdowns, when I discovered
+            UX Design and started experimenting with Figma. What began as
+            curiosity about design quickly grew into a deeper interest in
+            programming. I loved the mix of creativity, problem solving, and
+            building things from the ground up.
           </p>
           <p>
-            From there, I started taking computer science classes in high school
-            and found that programming was something I could pour a lot of time
-            and creativity into, and it was very rewarding. I've had multiple
-            work experiences in frontend development since then.
+            Since then, I’ve grown from designing wireframes to developing
+            full-stack applications and interning as a software engineer, where
+            I worked with tools like Python, React, Vue, and Laravel. I enjoy
+            tackling challenges that blend technical problem-solving with
+            thoughtful design, whether that’s automating workflows, improving
+            user experiences, or helping teams work more efficiently.
           </p>
           <p>
-            My current academic interests are human-computer interaction,
-            software development, cybersecurity, and project management.
+            These days, I’m especially interested in artificial intelligence,
+            data science, human-computer interaction, and cybersecurity, and I’m
+            excited about how these fields can shape the future of technology.
           </p>
         </div>
-
-        <img src="../assets/me.jpeg" class="about-img" />
       </div>
     </section>
     <div class="clip"></div>
@@ -95,50 +93,51 @@
       <h2>My Skills</h2>
       <div class="skills-container">
         <div class="skills-table">
-          <h3>Tools</h3>
+          <h3>Technical Skills</h3>
           <ul>
             <li>
               <font-awesome-icon icon="code" />
-              HTML, CSS, & JavaScript
+              Java, Python, JavaScript, C, C#
             </li>
             <li>
               <font-awesome-icon icon="sitemap" />
-              Vue.js, Vuex
+              React.js, Vue.js, Node.js, Express, Laravel
             </li>
             <li>
               <font-awesome-icon icon="database" />
-              Express.js, MongoDB
+              MongoDB, Redshift, DBeaver, SQL
             </li>
             <li>
               <font-awesome-icon icon="pen-nib" />
-              Figma (UI design)
-            </li>
-            <li>
-              <font-awesome-icon icon="file-code" />
-              Java, C, C#
+              Figma, VS Code, Git
             </li>
           </ul>
+          <router-link
+            style="padding: 6rem 3rem"
+            class="skills-link"
+            to="/projects"
+          >
+            <Button>See them in action ➤</Button>
+          </router-link>
         </div>
+
         <div class="skills-table">
-          <h3>Strengths</h3>
+          <h3>Hobbies</h3>
           <ul>
             <li>
-              <font-awesome-icon icon="mountain" />
-              Goal-Oriented
+              <font-awesome-icon icon="music" />
+              Hip-Hop Dance
             </li>
             <li>
-              <font-awesome-icon icon="tasks" />
-              Organized
+              <font-awesome-icon icon="table-tennis" />
+              Table Tennis
             </li>
             <li>
-              <font-awesome-icon icon="user-friends" />
-              Team Player
+              <font-awesome-icon icon="headphones" />
+              Music
             </li>
           </ul>
         </div>
-        <router-link class="skills-link" to="/projects">
-          <Button>See them in action ➤</Button>
-        </router-link>
       </div>
     </section>
     <Footer />
@@ -174,11 +173,11 @@ h2 {
 }
 .landing {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   margin-top: 5rem;
 }
 .landing h1 {
-  text-align: center;
   color: var(--main-color);
 }
 .landing p,
@@ -188,7 +187,6 @@ h2 {
 }
 .subtitle {
   display: flex;
-  justify-content: center;
   margin-bottom: 5rem;
 }
 .subtitle p {
@@ -198,20 +196,57 @@ h2 {
   margin-top: 0;
   transform-origin: top;
 }
-.img-and-btn {
+.landing-buttons {
   display: flex;
   justify-content: space-between;
 }
 .home-link {
   align-self: flex-start;
 }
-.img-and-btn img {
-  height: 20rem;
-  width: 20rem;
-  background-color: var(--main-color);
-  border-radius: 10rem;
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45rem;
+  width: 35rem;
+  object-fit: cover;
+  border-radius: 5rem;
   animation: scale 0.5s 1.5s forwards;
+  filter: drop-shadow(0 0.5rem 1rem var(--accent-color));
 }
+.img-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5rem;
+  background-color: var(--accent-color);
+  opacity: 0.1;
+  mix-blend-mode: saturation;
+}
+
+.landing-img {
+  height: 40rem;
+  width: 30rem;
+  object-fit: cover;
+  border-radius: 3rem;
+}
+
+.landing-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff0000; /* Your desired hex color */
+  opacity: 0.5; /* Adjust for desired tint intensity */
+  mix-blend-mode: multiply; /* Optional: Experiment with blend modes for different effects */
+}
+
 @keyframes scale {
   0% {
     transform: scale(100%);
@@ -248,11 +283,11 @@ h2 {
   line-height: 1.7;
 }
 .about a {
-  color: var(--bg-color);
+  color: var(--accent-color);
   font-weight: 500;
 }
 .about a:hover {
-  color: var(--accent-color);
+  color: var(--bg-color);
 }
 .skills {
   margin: -8rem 0;
@@ -301,6 +336,9 @@ h2 {
 }
 
 @media only screen and (max-width: 1200px) {
+  .img-container {
+    display: none;
+  }
   .wave {
     display: none;
   }
@@ -332,7 +370,7 @@ h2 {
   .subtitle {
     margin-bottom: 3rem;
   }
-  .img-and-btn {
+  .landing-buttons {
     flex-direction: column;
     align-items: center;
   }

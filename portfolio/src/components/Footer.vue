@@ -60,7 +60,7 @@ export default {
   margin-top: 2rem;
 }
 .socials h3 {
-  color: var(--bg-color);
+  color: var(--white);
 }
 .footer svg {
   margin-right: 0.5rem;

@@ -18,17 +18,18 @@ export default {
     if (this.theme) {
       this.currentTheme = this.theme;
     } else {
-      this.currentTheme = "moon";
+      this.currentTheme = "sun"; // new default
+      document.documentElement.setAttribute("theme", "moon");
     }
   },
   methods: {
     toTheme() {
-      if (this.currentTheme === "moon") {
+      if (this.currentTheme === "sun") {
         document.documentElement.setAttribute("theme", "sun");
-        this.currentTheme = document.documentElement.getAttribute("theme");
+        this.currentTheme = "moon";
       } else {
         document.documentElement.setAttribute("theme", "moon");
-        this.currentTheme = document.documentElement.getAttribute("theme");
+        this.currentTheme = "sun";
       }
     },
   },
