@@ -52,18 +52,18 @@ export default {
             "My summer of 2025 Software Engineering Internship on the Global Engineering team at Broadridge.",
         },
         {
-          title: "Technical Communications",
-          path: "technical-communications",
-          image: require("../assets/techcomm.png"),
-          description:
-            "Collection of projects I completed demonstrating effective technical writing and communication.",
-        },
-        {
           title: "SubjectToClimate Internship",
           path: "STC",
           image: require("../assets/stc.png"),
           description:
             "My summer of 2024 Web Developer Internship at SubjectToClimate, a climate education startup.",
+        },
+        {
+          title: "Riddler on the Roof",
+          path: "riddler",
+          image: require("../assets/riddler.png"),
+          description:
+            "Full-stack puzzle RPG built in Vue 3 that tracks user data with Vuex and saves it with MongoDB.",
         },
         {
           title: "Secret Santa Generator",
@@ -73,11 +73,11 @@ export default {
             "Java program that generates a random secret santa arrangement and adjusts with added players.",
         },
         {
-          title: "Riddler on the Roof",
-          path: "riddler",
-          image: require("../assets/riddler.png"),
+          title: "Technical Communications",
+          path: "technical-communications",
+          image: require("../assets/techcomm.png"),
           description:
-            "Full-stack puzzle RPG built in Vue 3 that tracks user data with Vuex and saves it with MongoDB.",
+            "Collection of projects I completed demonstrating effective technical writing and communication.",
         },
         {
           title: "My Portfolio",
@@ -100,27 +100,27 @@ export default {
           description:
             "Open-source newspaper application built in Nuxt.js that displays articles from our CMS.",
         },
-        {
-          title: "D&D One-Shot",
-          path: "d&d-one-shot",
-          image: require("../assets/dnd.png"),
-          description:
-            "Assists the user with every step of creating a Dungeons and Dragons one-shot.",
-        },
-        {
-          title: "Choose Your Own Adventure",
-          path: "choose-your-own-adventure",
-          image: require("../assets/adventure.png"),
-          description:
-            "Choose-your-own-adventure game that demonstrates application of JavaScript principles.",
-        },
-        {
-          title: "Kingdom of Galgudd",
-          path: "kingdom-of-galgudd",
-          image: require("../assets/galgudd.png"),
-          description:
-            "Welcome to Galgudd! This website advertises all aspects of a fictional kingdom.",
-        },
+        // {
+        //   title: "D&D One-Shot",
+        //   path: "d&d-one-shot",
+        //   image: require("../assets/dnd.png"),
+        //   description:
+        //     "Assists the user with every step of creating a Dungeons and Dragons one-shot.",
+        // },
+        // {
+        //   title: "Choose Your Own Adventure",
+        //   path: "choose-your-own-adventure",
+        //   image: require("../assets/adventure.png"),
+        //   description:
+        //     "Choose-your-own-adventure game that demonstrates application of JavaScript principles.",
+        // },
+        // {
+        //   title: "Kingdom of Galgudd",
+        //   path: "kingdom-of-galgudd",
+        //   image: require("../assets/galgudd.png"),
+        //   description:
+        //     "Welcome to Galgudd! This website advertises all aspects of a fictional kingdom.",
+        // },
       ],
     };
   },

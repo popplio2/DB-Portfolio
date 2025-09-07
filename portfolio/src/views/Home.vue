@@ -105,11 +105,11 @@
             </li>
             <li>
               <font-awesome-icon icon="database" />
-              MongoDB, Redshift, DBeaver, SQL
+              MongoDB, DBeaver, Redshift, SQL
             </li>
             <li>
               <font-awesome-icon icon="pen-nib" />
-              Figma, VS Code, Git
+              Git, Figma
             </li>
           </ul>
           <router-link
@@ -224,7 +224,7 @@ h2 {
   height: 100%;
   border-radius: 5rem;
   background-color: var(--accent-color);
-  opacity: 0.1;
+  opacity: 0.075;
   mix-blend-mode: saturation;
 }
 
@@ -233,18 +233,6 @@ h2 {
   width: 30rem;
   object-fit: cover;
   border-radius: 3rem;
-}
-
-.landing-img::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ff0000; /* Your desired hex color */
-  opacity: 0.5; /* Adjust for desired tint intensity */
-  mix-blend-mode: multiply; /* Optional: Experiment with blend modes for different effects */
 }
 
 @keyframes scale {
@@ -336,8 +324,14 @@ h2 {
 }
 
 @media only screen and (max-width: 1200px) {
-  .img-container {
-    display: none;
+  .landing {
+    flex-direction: column;
+    align-items: center;
+  }
+  .title-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
   .wave {
     display: none;
@@ -364,6 +358,10 @@ h2 {
     margin: 0;
     max-width: 20rem;
   }
+  .home-link {
+    align-self: unset;
+    margin-bottom: 4rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -373,10 +371,6 @@ h2 {
   .landing-buttons {
     flex-direction: column;
     align-items: center;
-  }
-  .home-link {
-    align-self: unset;
-    margin-bottom: 4rem;
   }
 }
 </style>
