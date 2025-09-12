@@ -89,39 +89,53 @@
         </p>
         <h3>Professional Growth</h3>
         <p>
-          Beyond technical skills, I enhanced problem-solving, communication,
-          and collaboration abilities. I learned to balance innovation with
-          security, anticipate system bottlenecks, and design scalable,
-          maintainable features. Seeing our work save thousands of hours of
-          manual effort daily reinforced the impact of thoughtful, user-focused
-          engineering.
+          Through both the PTV Automation and Capstone projects, I strengthened
+          my problem-solving, communication, and collaboration skills. On the
+          automation side, I learned to design frameworks that improved
+          efficiency while staying maintainable for future teammates. On the
+          capstone project, I grew by integrating enterprise systems and
+          extending existing tools to work seamlessly with internal data
+          sources, which required cross-team coordination and iterative
+          feedback. Across both, I learned how to translate business needs into
+          technical solutions, communicate progress to stakeholders, and
+          collaborate effectively in Agile environments. These experiences
+          deepened my ability to balance technical execution with organizational
+          goals and teamwork.
         </p>
         <h3>Key Technical Achievements & Challenges</h3>
         <ul>
           <li>
             Automated validation of PTV input files against Redshift data,
-            replacing manual checks and increasing efficiency by over 99%
+            replacing manual checks and improving efficiency by over 99%.
           </li>
           <li>
-            Developed enhanced output format for validation scripts to make
-            errors easier to debug and identify for both developers and users
+            Developed enhanced output formatting for validation scripts, making
+            errors easier to debug and interpret for developers and users.
           </li>
           <li>
-            Implemented PTV framework to separate scripts, input files, SQL
-            queries, and credentials, ensuring maintainability beyond internship
+            Designed a maintainable PTV framework separating scripts, queries,
+            and credentials, ensuring usability beyond my internship.
           </li>
           <li>
-            Debugged data validation issues, including handling multiple input
-            file types and mapping discrepancies between input files and
-            Redshift tables
+            Debugged complex validation issues, including handling multiple
+            input file types and resolving mapping discrepancies with Redshift
+            tables.
           </li>
           <li>
-            Led onboarding of 4 teammates to ensure continuity and
-            reproducibility of automation scripts
+            Integrated the internal GenAI tool with Confluence and Jira via MCP
+            in the capstone project, enabling more business-relevant responses.
           </li>
           <li>
-            Gained experience across a diverse tech stack including Python, SQL,
-            DBeaver, React, TypeScript, and Redshift
+            Optimized server discovery and request handling to improve system
+            performance and prevent server overload.
+          </li>
+          <li>
+            Led onboarding of 4 teammates, ensuring reproducibility of
+            automation scripts and continuity of project work.
+          </li>
+          <li>
+            Built adaptability across a diverse tech stack including Python,
+            SQL, DBeaver, React, TypeScript, and Redshift.
           </li>
         </ul>
         <iframe

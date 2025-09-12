@@ -214,6 +214,7 @@ h2 {
   border-radius: 5rem;
   animation: scale 0.5s 1.5s forwards;
   filter: drop-shadow(0 0.5rem 1rem var(--accent-color));
+  transition: 0.2s all;
 }
 .img-container::before {
   content: "";
@@ -226,6 +227,7 @@ h2 {
   background-color: var(--accent-color);
   opacity: 0.075;
   mix-blend-mode: saturation;
+  transition: 0.2s all;
 }
 
 .landing-img {
@@ -365,6 +367,23 @@ h2 {
 }
 
 @media only screen and (max-width: 600px) {
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: unset;
+    margin-left: -10%;
+    margin-right: -10%;
+  }
+  .skills-table {
+    border: unset;
+    padding: unset;
+    padding-bottom: 2rem;
+    margin: unset;
+    border-radius: unset;
+    width: unset;
+    box-shadow: unset;
+  }
   .subtitle {
     margin-bottom: 3rem;
   }
