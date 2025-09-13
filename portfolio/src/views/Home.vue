@@ -28,9 +28,11 @@
         </div>
         <EmailButton />
       </div>
-      <div class="img-container">
-        <img class="landing-img" src="../assets/photoshoot.jpeg" />
-      </div>
+      <img
+        alt="Male college student in white t-shirt standing in front of shrubbery."
+        class="landing-img"
+        src="../assets/photoshoot.jpeg"
+      />
     </section>
 
     <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -204,37 +206,14 @@ h2 {
   align-self: flex-start;
 }
 
-.img-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 45rem;
-  width: 35rem;
-  object-fit: cover;
-  border-radius: 5rem;
-  animation: scale 0.5s 1.5s forwards;
-  filter: drop-shadow(0 0.5rem 1rem var(--accent-color));
-  transition: 0.2s all;
-}
-.img-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 5rem;
-  background-color: var(--accent-color);
-  opacity: 0.075;
-  mix-blend-mode: saturation;
-  transition: 0.2s all;
-}
-
 .landing-img {
   height: 40rem;
   width: 30rem;
   object-fit: cover;
   border-radius: 3rem;
+  animation: scale 0.5s 1.5s;
+  filter: drop-shadow(0 0.5rem 1rem var(--accent-color));
+  transition: 0.1s all;
 }
 
 @keyframes scale {
