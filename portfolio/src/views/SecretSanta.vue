@@ -31,10 +31,8 @@
       <template v-slot:overview>
         <h3>Overview</h3>
         <p>
-          Every year my friend group uses a
-          <a href="https://www.drawnames.com/"
-            >website to organize a secret santa</a
-          >. With these things, you often invite more people than you initially
+          Every year my friend group uses a website to organize a secret santa.
+          With these things, you often invite more people than you initially
           added, so I was curious how this website included those people into
           its arrangement. I predicted that it differentiated between people who
           already drew a name (of a person to give a gift to) and people who

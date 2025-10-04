@@ -47,73 +47,160 @@
       </template>
       <template v-slot:overview>
         <p>
-          <b>Riddler on the Roof</b> is a story-driven RPG I developed with a
-          team of five over five months for my AP Computer Science Principles
-          class. I led frontend development, integrated the team’s
-          contributions, managed backend connections, and helped shape both the
-          story and gameplay.
+          Riddler on the Roof is an RPG I worked on in a team of 5 for my AP
+          Computer Science Principles class. I worked on much of the frontend
+          development, as well as integrating each member's contributions. I
+          also worked on the backend and connecting to the database. Lastly, I
+          helped with the story and game design.
+        </p>
+        <h3>Initial Brainstorming</h3>
+        <p>
+          We decided that for our full-stack project we'd create a story game,
+          so we started brainstorming our concept. We reached this idea of a
+          puzzle game where the protagonist is stuck in a dungeon and needs to
+          solve riddles to progress through it and escape. One of our team
+          members, Nika Imamberdieva, suggested the punny name "Riddler on the
+          Roof," and we ran with that angle. We'd have our mysterious Riddler on
+          the roof of his tower, and the protagonist would climb the tower and
+          eventually have some confrontation.
+        </p>
+        <p>
+          From there, we thought about level ideas. We needed to think of a
+          riddle for each level, as well as items, puzzles, and NPC's that would
+          give the user clues to the riddle.
+        </p>
+        <p>
+          We also began to consider the structure of our application. Namely,
+          which technologies to use, like Vue vs. Nuxt, and how we would manage
+          the user's state and save the user's data. We decided to use Vue,
+          which we thought would be easier for token authentication because
+          there were more resources online (ironically, it turned out that most
+          of those resources were for Vue 2 rather than Vue 3, which was a
+          problem that we would eventually work through). We also chose Vue over
+          Nuxt because Vue has a state management library called Vuex that we
+          would use to keep track of the user's inventory, progress, location,
+          etc.
         </p>
 
-        <h3>From Concept to Game</h3>
+        <h3>Workflow</h3>
         <p>
-          Our team set out to create a story-driven puzzle game where a
-          protagonist climbs a tower, solving riddles at each level to reach the
-          mysterious Riddler at the top. I led discussions on game mechanics,
-          level design, and the technical stack. We chose Vue and Vuex for
-          responsive state management, tracking the player’s inventory,
-          progress, and location. I also established a Git workflow to prevent
-          merge conflicts and trained the team on pull requests and proper
-          branching, ensuring smooth collaboration.
-        </p>
-        <p>
-          During brainstorming, I guided the team in designing puzzles, items,
-          and NPCs that would give players clues to solve each riddle. We
-          iterated on level ideas, ensuring each puzzle could be implemented
-          effectively while keeping gameplay engaging. This process shaped how
-          we approached the structure of our application and the interaction
-          logic for characters and objects.
+          At this point, we were about to start actually writing code. But
+          first, I needed everyone to be on the same page regarding our Git
+          workflow. Charley Baluja, another member of my team, worked on the
+          <router-link to="/projects/tech-times" target="_blank"
+            >Tech Times</router-link
+          >
+          project with me, and over the course of that project we ran into many
+          problems with accidentally erasing each other's work when we merged
+          branches, and we couldn't have that happening here. So Charley and I
+          explained things like how to merge branches properly and make pull
+          requests to the rest of our team members, ensuring that, with time,
+          we'd be able to work together rather seamlessly.
         </p>
 
-        <h3>Collaboration and Development</h3>
+        <h3>Roles</h3>
         <p>
-          We divided work based on team strengths: I built the character
-          interaction system and designed levels, one teammate created motion
-          and animation, another implemented dialogue and story elements, one
-          developed a reusable puzzle component, and another managed backend
-          authentication. I coordinated assets, story updates, and gameplay
-          mechanics, continuously integrating contributions so the game felt
-          cohesive.
+          Now, onto the fun stuff! We needed to figure out how to start this
+          monster of a project. After talking to our teacher, I understood that
+          we needed to start with basic mechanics of the game in the frontend.
+          So, I began working on figuring out how to make a character that could
+          interact with objects, my team member Lucy Kwan worked on figuring out
+          character motion (including animation), and Charley worked on
+          implementing character dialogue. Team member Jake Li worked on writing
+          up initial models for user data, puzzles, etc. while Nika looked into
+          token authentication with Auth0 and continued brainstorming puzzles.
         </p>
         <p>
-          Some puzzles seemed simple on paper but were difficult to implement
-          under time constraints. I focused on adapting these ideas to fit our
-          existing frameworks—for instance, designing multi-step riddles that
-          reused the puzzle component rather than creating one-off solutions.
-          Regular feedback loops helped refine mechanics and balance challenge
-          with playability.
+          I had never worked on a project that depended so heavily on user
+          input, so I had no best practices or anything to go off of—just my
+          intuition. I thought of keeping track of a CSS property, like margin,
+          to establish a location for characters and objects in the game.
+          Coincidentally Lucy used a similar approach when coding the motion
+          mechanics, so we were able to combine our work easily. We also figured
+          out that using percentages for the margins meant that we could make
+          the game responsive and able to scale to various screens.
         </p>
 
-        <h3>Challenges and Problem-Solving</h3>
+        <h3>How We Proceeded</h3>
         <p>
-          Backend development and authentication presented significant
-          challenges. I stepped in to implement critical backend functionality
-          while supporting teammates where possible. I also became the main
-          debugger, resolving complex issues that arose from integrating
-          different components. For example, linking user inventory with puzzle
-          outcomes required careful coordination of frontend and backend logic,
-          which I guided the team through.
+          Little by little, our project got closer to being complete. Jake
+          worked on creating a puzzle component that could be reused for
+          multiple types of puzzles. Charley worked on some frontend components
+          and writing lore for the main character and the Riddler, which gave us
+          a better understanding of how to portray them in the game. Lucy worked
+          on creating digital assets—art for our maps, characters, items,
+          puzzles, home screen, and more.
+        </p>
+        <p>
+          I started building levels, which meant giving Lucy my ideas for items
+          and puzzles, updating Jake on new properties needed for the puzzle
+          component, and asking Charley to write lore for certain portions of
+          the game. Many of the ideas we had written up for puzzles seemed
+          achievable when we started the project, but they ended up being
+          unrealistic to implement under the time constraints. Rather than code
+          complex components that would only be used for one-off puzzles, I
+          wanted to make most things work within the framework that we had
+          already set for most in-game objects. I thought of items and puzzles
+          as I coded, and I got consistent feedback from my teammates to improve
+          the ideas and develop a direction for the game.
+        </p>
+
+        <h3>Obstacles</h3>
+        <p>
+          With me working on coding the levels and Lucy making assets for them,
+          our frontend was making progress. But we needed to start working on
+          authentication and the backend.
+        </p>
+        <p>
+          Nika took on the backend role, which did not come without its
+          challenges. Most of us, including Nika, were unfamiliar with backend
+          development, and Nika also had the least compsci experience within our
+          group in general.
+        </p>
+        <p>
+          My plate was full with frontend work, so when Nika had trouble in the
+          backend, I couldn't find the time to teach her. I, feeling the
+          pressure of our time constraint, figured out how to code much of the
+          backend myself rather than helping Nika through the process.
+        </p>
+        <p>
+          When Nika had questions on authentication, though, I felt like I
+          didn't have time to dive into the documentation for Auth0 in order to
+          help her. Thankfully, she was able to get external help from another
+          student in our class who was working on authentication.
+        </p>
+        <p>
+          I regret the fact that I wasn't able to effectively lead Nika
+          initially. Some of it was likely beyond my control, but some of it may
+          have also come down to poor delegation of tasks on my part. I am glad,
+          though, that we were able to work together better in the last leg of
+          the project. Once she had finished most of the authentication work,
+          she taught me some things that I didn't understand, and I was able to
+          help fix a bug that she was struggling with. From then on, I
+          communicated with Nika when I needed to make changes with how we were
+          saving data.
+        </p>
+        <p>
+          The last obstacle I encountered was debugging in the last couple weeks
+          before the deadline. I had the most complete knowledge of the
+          components that each of my teammates contributed, so I was our best
+          bet at solving any random bugs we found. It was hard to navigate our
+          complex app, and especially Jake's intricate puzzle component, but I
+          was able to fix the bugs in time.
         </p>
 
         <h3>Reflection</h3>
         <p>
-          Leading a five-month project like this tested my ability to balance
-          vision, delegation, and hands-on problem-solving. Seeing the tower
-          come alive, puzzles come together, and our story play out in a
-          cohesive game was incredibly rewarding. The experience strengthened my
-          leadership skills, taught me how to adapt under constraints, and
-          reinforced the value of close collaboration in software development.
-          Our final product is something I'm incredibly proud of, and I hope you
-          get a chance to play it and let me know what you think of it!
+          This project was definitely a test of my leadership. I'd never worked
+          on assignment that had such a long timeline and required so much
+          decisionmaking on every step of the way.
+        </p>
+        <p>
+          As we finished up Riddler, we ended up with a wonderful final product
+          that we were all proud of. Leading the creation of a substantial,
+          five-month long project was an amazing experience, and I know that
+          what I learned from the good and the bad will guide me as I strive to
+          become a more effective leader and programmer.
         </p>
       </template>
     </CaseStudy>
