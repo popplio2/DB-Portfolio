@@ -35,7 +35,7 @@ article:hover {
   border: 0.2rem solid var(--accent-color);
 }
 article div {
-  width: 50%;
+  width: 60%;
 }
 button {
   margin-top: 2rem;

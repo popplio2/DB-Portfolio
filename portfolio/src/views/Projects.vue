@@ -73,6 +73,20 @@ export default {
             "Java program that generates a random secret santa arrangement and adjusts with added players.",
         },
         {
+          title: "Tech Times",
+          path: "tech-times",
+          image: require("../assets/techtimes.png"),
+          description:
+            "Open-source newspaper application built in Nuxt.js that displays articles from our CMS.",
+        },
+        {
+          title: "Scrappy Notes",
+          path: "scrappy-notes",
+          image: require("../assets/scrappy.png"),
+          description:
+            "Note-taking website that utilizes Vue.js for data-binding and reactive UI development.",
+        },
+        {
           title: "Technical Communications",
           path: "technical-communications",
           image: require("../assets/techcomm.png"),
@@ -86,20 +100,7 @@ export default {
           description:
             "How I built the portfolio you are currently viewing (and hopefully enjoying).",
         },
-        {
-          title: "Scrappy Notes",
-          path: "scrappy-notes",
-          image: require("../assets/scrappy.png"),
-          description:
-            "Note-taking website that utilizes Vue.js for data-binding and reactive UI development.",
-        },
-        {
-          title: "Tech Times",
-          path: "tech-times",
-          image: require("../assets/techtimes.png"),
-          description:
-            "Open-source newspaper application built in Nuxt.js that displays articles from our CMS.",
-        },
+
         // {
         //   title: "D&D One-Shot",
         //   path: "d&d-one-shot",
@@ -136,7 +137,7 @@ h2 {
 img {
   object-fit: cover;
   object-position: left;
-  width: 50%;
+  max-width: 40%;
   height: 25rem;
   margin-right: 2rem;
   border-radius: 1rem;
@@ -150,13 +151,13 @@ img:hover {
   grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
   gap: 2rem;
 }
-
 @media only screen and (max-width: 600px) {
   .projects-container {
     grid-template-columns: 1fr;
   }
   img {
     width: 100%;
+    max-width: unset;
     object-position: center;
   }
 }

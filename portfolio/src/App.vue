@@ -124,6 +124,14 @@ a:hover {
   opacity: 0;
 }
 
+@media only screen and (max-width: 1200px) {
+  :root {
+    --h1: 6rem;
+    --h2: 4rem;
+    --h3: 2.5rem;
+    --p: 1.65rem;
+  }
+}
 @media only screen and (max-width: 600px) {
   :root {
     --h1: 5rem;
