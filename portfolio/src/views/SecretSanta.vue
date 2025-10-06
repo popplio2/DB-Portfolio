@@ -31,96 +31,74 @@
       <template v-slot:overview>
         <h3>Overview</h3>
         <p>
-          Every year my friend group uses a
+          Every year, my friend group uses
           <a href="https://www.drawnames.com/"
-            >website to organize a secret santa</a
-          >. With these things, you often invite more people than you initially
-          added, so I was curious how this website included those people into
-          its arrangement. I predicted that it differentiated between people who
-          already drew a name (of a person to give a gift to) and people who
-          have not drawn their name yet. This would allow new players to be
-          matched up with those who have not drawn names yet. I decided to
-          create Secret Santa Generator to see if I could solve this problem
-          myself using my knowledge of object-oriented programming and data
-          structures.
+            >a website to organize a Secret Santa</a
+          >. I was curious how it efficiently incorporated new participants
+          after the initial arrangement. I hypothesized that the system
+          differentiated between participants who had already drawn a name and
+          those who had not. To explore this, I built
+          <b>Secret Santa Generator</b> as a way to apply object-oriented
+          programming and data structures to a real-world matching problem.
         </p>
         <h3>Defining a Valid Arrangement</h3>
         <p>
-          The first problem I needed to solve was how I can get an initial valid
-          arrangement when an instance of my class is created. In graph terms, a
-          valid arrangement is a collection of one-way cycles of three or more
-          people. More simply, if I'm a player, I can give a gift to someone who
-          is not myself and is not the person who is giving me a gift.
+          A key challenge was defining a “valid” arrangement. In graph terms,
+          this corresponds to one-way cycles of three or more participants: each
+          person can give a gift to someone who is not themselves and is not
+          their own Santa. Translating this into code required careful design of
+          classes and data structures to represent participants and their
+          relationships.
         </p>
         <h3>Generating an Initial Arrangement</h3>
         <p>
-          At first, I thought that I could have each person be matched up with
-          another random person from the pool. Upon further consideration,
-          though, this can run into some problems. If a cycle is created among a
-          subset of players, then there may be one or two players left who
-          cannot be matched up with each other. Thus, this arrangement would
-          have to be scrapped.
+          My first approach of assigning random matches often failed due to
+          leftover participants unable to form valid cycles. To guarantee
+          correctness, I implemented a single-cycle approach: shuffle the
+          participant list and pair neighbors, looping the last element to the
+          first. This ensured a valid starting arrangement while balancing
+          randomness and reliability.
+        </p>
+        <h3>Adding New Players</h3>
+        <p>
+          Integrating new participants into an existing arrangement turned out
+          to be the trickiest part of the project. By this point, some players
+          had already drawn a name (Santas), some had already been assigned as a
+          recipient (Santees), and some were both or neither. I needed to ensure
+          that the new assignments would respect all rules: no one could give a
+          gift to themselves, and no two participants could give gifts to each
+          other.
         </p>
         <p>
-          I needed a way to make an arrangement that is guaranteed to work.
-          Thus, I decided that I would sacrifice some randomness in my initial
-          arrangement. Rather than allowing sub-cycles to be created, I would
-          generate one cycle from the whole pool of players by shuffling a list
-          and making pairs from neighbors in the list (the last element would be
-          the first element's santa).
-        </p>
-        <h3>Adding New Players to the Arrangement</h3>
-        <p>
-          Now, I needed to figure out how to update this arrangement when new
-          players are added.
-        </p>
-        <p>
-          We can think of people in terms of santas and santees--those who have
-          drawn a name and those whose name has been drawn, respectively.
-          Visually, a santa has an outgoing arrow, and a santee has an incoming
-          arrow. By the time new players are added, some people may have already
-          drawn their name, some people may have had their names drawn by other
-          people, and for some people both or neither may be true.
+          I approached this by categorizing players into mutually exclusive
+          sets: “Santees but not Santas,” “Santas but not Santees,” and
+          “neither.” Then, I iteratively paired the first set with the third
+          set, resolving as many new assignments as possible while updating the
+          sets after each iteration. This process naturally propagated new
+          constraints: pairing someone as a Santee could create new Santas that
+          needed pairing in the next round. By repeating this loop until all
+          non-assigned participants were accounted for, I ensured that every new
+          player was integrated into the arrangement without violating any
+          rules.
         </p>
         <p>
-          While, initially, it seems simple to match up players who are not
-          santas with other players who are not santees, this is tedious because
-          of two rules: no player can give a gift to themself and no pair of
-          players can give gifts to each other. I found it to be easier to
-          prepare mutually exclusive sets of players to match up with one
-          another.
+          This part of the project required careful thought and debugging. I had
+          to reason through multiple edge cases, visualize arrows representing
+          gift-giving relationships, and refine my data structures to make the
+          update logic clean and maintainable. It was deeply satisfying to see
+          the algorithm handle complex scenarios that initially seemed almost
+          impossible to manage manually.
         </p>
-        <p>
-          First, I would pair those who are santees but not santas (only
-          incoming arrow) with those who are not santas nor santees (no arrows).
-          This way, we sort of get the players with preexisting arrows out of
-          the way. However, when these new pairings are created, there are now
-          new santees who need to be paired up with a santa. And so, we make
-          this a while loop that makes these pairings and then updates the sets
-          for the next iteration. The loop stops when the set of not santas and
-          not santees in empty, after which we are left with a set of only
-          santas and a set of only santees. These sets are mutually exclusive,
-          and so we can pair them up with each other.
-        </p>
+
         <h3>Reflection</h3>
         <p>
-          That was a description of my final solution, but getting there was not
-          easy! I often had to step back and reconsider how I was storing data,
-          what data I decided to store, and even what I named my data fields
-          (poor naming can cause a lot of confusion).
-        </p>
-        <p>
-          The procedure for adding players was also difficult conceptually, and
-          it required that I understood many edge cases. In fact, I did not
-          expect to have to use set operations at all when I started this
-          project!
-        </p>
-        <p>
-          All in all, I am proud of myself for being able to analyze an abstract
-          problem with more detail and consideration than I ever had in the
-          past. I hope to be able to come back to this project once I'm further
-          along in my education and be able to see even more ways to optimize
-          it.
+          This project strengthened my problem-solving and algorithmic thinking.
+          I had to carefully consider data representation, edge cases, and
+          iterative update logic. I also gained experience in balancing
+          correctness with efficiency, and in writing maintainable, readable
+          code. I’m proud that I translated an abstract real-world problem into
+          a robust software solution, and I look forward to further optimizing
+          it as my technical skills grow.
         </p>
       </template>
     </CaseStudy>
